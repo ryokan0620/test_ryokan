@@ -575,6 +575,14 @@ a:hover {
           justify-content: space-between;
 }
 
+@media (max-width: 1080px) {
+  .main-contents__inner {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .main-contents__left {
   width: 280px;
 }
@@ -649,5 +657,29 @@ a:hover {
 
 .category-box ul li a img {
   margin-right: 8px;
+}
+
+.important-notice {
+  background-color: white;
+  padding: 20px;
+  border: 2px dashed #FF6400;
+}
+
+.important-notice h2 {
+  color: #5C3C20;
+  margin: 0;
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+  border-bottom: 2px solid #FF6400;
+}
+
+.important-notice h2 img {
+  margin-right: 15px;
 }
 /*# sourceMappingURL=styles.css.map */

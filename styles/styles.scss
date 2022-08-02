@@ -121,6 +121,9 @@ a{
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    @media (max-width:$content-width) {
+      justify-content: center;
+    }
   }
   &__left{
     width: $side-width;
@@ -182,7 +185,21 @@ a{
 }
 
 .important-notice{
-
+  background-color: white;
+  padding: 20px;
+  border: 2px dashed $orange;
+  h2{
+    color: $brown-text;
+    margin: 0;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    img{
+      margin-right: 15px;
+    }
+    border-bottom: 2px solid $orange;
+  }
 }
 
 
