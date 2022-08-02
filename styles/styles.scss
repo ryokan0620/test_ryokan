@@ -1,5 +1,5 @@
-@import './vander/normalize';
-@import './variables/variable';
+@import './vander/normalize';  // https: //necolas.github.io/normalize.css/
+@import './variables/variable'; // 色や画面幅などの変数
 
 body{
   font-family: fot-tsukuardgothic-std, sans-serif;
@@ -23,7 +23,7 @@ a{
     height: 20px;
     background-color: $orange;
     @media (max-width:$break-point) {
-     display: none;
+      display: none;
     }
   }
   &__inner{
@@ -85,56 +85,47 @@ a{
   }
 }
 
-.search-box{
-  display: flex;
-  border-radius: 0;
-  height: 40px;
-  line-height: 1;
-  color: $gray;
-  width: 324px;
-  margin-left: auto;
-  margin-right: 16px;
-  margin-top: 25px;
-  @media (max-width:$content-width) {
-    display: none;
+@import './components/search-box';
+
+.global-navi{
+  &__inner{
+    max-width: $content-width;
+    margin: 0 auto;
   }
-  &__sel{
-    appearance: none;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    width: 110px;
-    border-color: $gray-light;
-    color: $gray;
-    padding: 10px;
-    padding-right: 20px;
-    font-weight: bold;
-    outline: none;
-    &-container{
-      position: relative;
-      img{
-        position: absolute;
-        right: 6px;
-        top:50%;
-        transform: translateY(-50%);
-      }
+  ul{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+  }
+}
+
+.main-contents{
+  background-color: $orange-light;
+  padding-top: 40px;
+  &__inner{
+    max-width: $content-width;
+    margin: 0 auto;
+  }
+  &__left{
+    width: $side-width;
+    @media (max-width:$content-width) {
+      display: none;
+    }
+    img{
+      margin-bottom: 20px;
     }
   }
-  &__input{
-    padding: 10px 5px;
-    border:none;
-    appearance: none;
-    outline: none;
-    color: $gray;
-    font-weight: bold;
-    background-color: $gray-light;
-    width: 164px;
-  }
-  &__btn{
-    appearance: none;
-    border: none;
-    padding: 8px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    cursor: pointer;
+}
+
+.shadow{
+  box-shadow: 5px 5px 5px rgba(black, .16);
+}
+
+.rounded{
+  border-radius: 10px;
+  &-double{
+    border-radius: 20px;
   }
 }
