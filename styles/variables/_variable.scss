@@ -2,6 +2,14 @@ $orange: #FF6400;
 $orange-light: #FFF8EA;
 $green-light: #F4FCF3;
 $green: #21B209;
+
 $brown-text: #5C3C20;
 
+$gray: #707070;
+$gray-light: #EBEBEB;
+
+
 $content-width: 1080px;
+$break-point: 768px;
+// $break-point-minus-1:767px;
+$break-point-minus-1: calc( #{$break-point} - 1px );

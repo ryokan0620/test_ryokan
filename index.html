@@ -5,6 +5,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>健達ねっと</title>
+  <script>
+    // Adobe Font の読み込み
+    (function (d) {
+      var config = {
+        kitId: 'uqj5jre',
+        scriptTimeout: 3000,
+        async: true
+      },
+        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
 </head>
 <link rel="stylesheet" href="./styles/styles.css">
 <script src="https://kit.fontawesome.com/f9d3f43809.js" crossorigin="anonymous"></script>
@@ -12,16 +23,31 @@
 
   <header class="header">
     <div class="header__inner">
-      <a href="#">
-        <img class="" src="./img/logo-desktop.png" alt="家族の介護と健康を支える学研の情報サイト｜健達ねっと">
+      <a class="header__logo" href="#">
+        <img class="header__logo-img-pc" src="./img/logo-desktop.png" alt="家族の介護と健康を支える学研の情報サイト｜健達ねっと">
+        <img class="header__logo-img-sp" src="./img/logo-smartphone.png" alt="家族の介護と健康を支える学研の情報サイト｜健達ねっと">
       </a>
       <form class="search-box">
-        <select name="" id="">
-          <option value="">全ての商品</option>
-        </select>
-        <input type="text">
-        <button type="submit"><img src="./img/Icon-awesome-search.svg" alt="検索"></button>
+        <div class="search-box__sel-container">
+          <select class="search-box__sel" name="" id="">
+            <option value="">全ての商品</option>
+            <option value="">食品</option>
+            <option value="">健康・医療品</option>
+            <option value="">インテリア・寝具</option>
+            <option value="">ドリンク・健康飲料</option>
+            <option value="">衣料品・靴</option>
+            <option value="">本・電子書籍</option>
+            <option value="">特集</option>
+          </select>
+          <img src="./img/Icon-feather-triangle.svg" alt="">
+        </div>
+        <input class="search-box__input" type="text" placeholder="キーワード検索">
+        <button class="search-box__btn" type="submit"><img src="./img/Icon-awesome-search.svg" alt="検索"></button>
       </form>
+      <div class="header__navi">
+        <a href="#"><img src="./img/Icon-awesome-shopping-cart.svg" alt="カート"><span>カートを見る</span></a>
+        <a href="#"><img src="./img/Icon-awesome-user.svg" alt="カート"><span>会員登録はこちら</span></a>
+      </div>
     </div>
   </header>
   <nav>
@@ -35,6 +61,11 @@
   </nav>
   <!-- <div class="l-global-navi"></div> -->
 
+  <img src="./img/Icon-awesome-shopping-cart.svg" alt="">
+  <img src="./img/Icon-awesome-shopping-cart.svg" alt="">
+  <img src="./img/Icon-awesome-shopping-cart.svg" alt="">
+  <img src="./img/Icon-awesome-shopping-cart.svg" alt="">
+  <img src="./img/Icon-awesome-shopping-cart.svg" alt="">
   <img src="./img/Icon-awesome-shopping-cart.svg" alt="">
 </body>
 </html>
