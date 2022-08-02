@@ -341,10 +341,15 @@ template {
   display: none;
 }
 
-.l-header::before {
+.header::before {
   display: block;
   content: "";
   height: 20px;
   background-color: #FF6400;
+}
+
+.header__inner {
+  max-width: 1080px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=styles.css.map */
