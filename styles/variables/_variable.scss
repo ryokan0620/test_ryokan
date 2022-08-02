@@ -11,4 +11,6 @@ $gray-light: #EBEBEB;
 $content-width: 1080px;
 $side-width: 280px;
 $break-point: 768px;
+
+$main-width: calc( #{$content-width} - #{$side-width} - 40px );
 $break-point-minus-1: calc( #{$break-point} - 1px );

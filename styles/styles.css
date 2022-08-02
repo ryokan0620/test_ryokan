@@ -358,6 +358,19 @@ a:hover {
   opacity: .8;
 }
 
+.shadow {
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.16);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.16);
+}
+
+.rounded {
+  border-radius: 10px;
+}
+
+.rounded-double {
+  border-radius: 20px;
+}
+
 .header::before {
   display: block;
   content: "";
@@ -504,6 +517,7 @@ a:hover {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  pointer-events: none;
 }
 
 .search-box__input {
@@ -553,6 +567,12 @@ a:hover {
 .main-contents__inner {
   max-width: 1080px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .main-contents__left {
@@ -565,20 +585,69 @@ a:hover {
   }
 }
 
-.main-contents__left img {
+.main-contents__left > a > img {
   margin-bottom: 20px;
 }
 
-.shadow {
-  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.16);
-          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.16);
+.main-contents__right {
+  width: calc( 1080px - 280px - 40px);
 }
 
-.rounded {
+.category-box h2 {
+  font-size: 22px;
+  color: #FF6400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0;
+  padding-left: 20px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.category-box h2 img {
+  margin-right: 10px;
+}
+
+.category-box h2 span {
+  display: block;
+  line-height: 1;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.category-box ul {
+  background: white;
+  list-style: none;
+  padding-left: 0;
   border-radius: 10px;
+  border: 2px solid #FF6400;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  margin-top: 0;
 }
 
-.rounded-double {
-  border-radius: 20px;
+.category-box ul li {
+  border-bottom: 1px solid rgba(112, 112, 112, 0.2);
+}
+
+.category-box ul li:last-child {
+  border-bottom: none;
+}
+
+.category-box ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 20px;
+}
+
+.category-box ul li a img {
+  margin-right: 8px;
 }
 /*# sourceMappingURL=styles.css.map */
