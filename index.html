@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes">
   <title>健達ねっと</title>
+  <!-- Adobe Font の読み込み -->
   <script>
-    // Adobe Font の読み込み
     (function (d) {
       var config = {
         kitId: 'uqj5jre',
@@ -16,9 +17,13 @@
         h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
     })(document);
   </script>
+  <!-- Slickの読み込み -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- メインCSS -->
+  <link rel="stylesheet" href="./styles/styles.css">
 </head>
-<link rel="stylesheet" href="./styles/styles.css">
-<script src="https://kit.fontawesome.com/f9d3f43809.js" crossorigin="anonymous"></script>
+
+
 <body>
 
   <header class="header">
@@ -73,11 +78,16 @@
           <h2><img src="./img/Icon-ionic-ios-flag.svg" alt=""><span>カテゴリー</span></h2>
           <ul class="shadow">
             <li><a href="#"><img src="./img/Icon-ionic-ios-arrow-dropright-circle.svg" alt=""><span>食品</span></a></li>
-            <li><a href="#"><img src="./img/Icon-ionic-ios-arrow-dropright-circle.svg" alt=""><span>健康・医療品</span></a></li>
-            <li><a href="#"><img src="./img/Icon-ionic-ios-arrow-dropright-circle.svg" alt=""><span>インテリア・寝具</span></a></li>
-            <li><a href="#"><img src="./img/Icon-ionic-ios-arrow-dropright-circle.svg" alt=""><span>ドリンク・健康飲料</span></a></li>
-            <li><a href="#"><img src="./img/Icon-ionic-ios-arrow-dropright-circle.svg" alt=""><span>衣料品・靴</span></a></li>
-            <li><a href="#"><img src="./img/Icon-ionic-ios-arrow-dropright-circle.svg" alt=""><span>本・電子書籍</span></a></li>
+            <li><a href="#"><img src="./img/Icon-ionic-ios-arrow-dropright-circle.svg" alt=""><span>健康・医療品</span></a>
+            </li>
+            <li><a href="#"><img src="./img/Icon-ionic-ios-arrow-dropright-circle.svg" alt=""><span>インテリア・寝具</span></a>
+            </li>
+            <li><a href="#"><img src="./img/Icon-ionic-ios-arrow-dropright-circle.svg" alt=""><span>ドリンク・健康飲料</span></a>
+            </li>
+            <li><a href="#"><img src="./img/Icon-ionic-ios-arrow-dropright-circle.svg" alt=""><span>衣料品・靴</span></a>
+            </li>
+            <li><a href="#"><img src="./img/Icon-ionic-ios-arrow-dropright-circle.svg" alt=""><span>本・電子書籍</span></a>
+            </li>
             <li><a href="#"><img src="./img/Icon-ionic-ios-arrow-dropright-circle.svg" alt=""><span>特集</span></a></li>
           </ul>
         </div>
@@ -103,102 +113,104 @@
           <div class="toppage-cards">
             <h2><img src="./img/Icon-metro-info.svg" alt=""><span>新着商品</span></h2>
             <div class="toppage-cards__inner">
-            <div class="toppage-cards__item">
-              <a href="#">
-                <img class="toppage-cards__item-img" src="./img/card-sample1.jpg" alt="">
-                <h3>ごちそうスムージー</h3>
-                <p>1人気のフルーツを贅沢に使用！華やかな香りと豊かな甘みのスムージー...</p>
-                <div class="toppage-cards__item-props">
-                  <div class="toppage-cards__item-cat">
-                    <img src="./img/Icon-ionic-ios-flag-green.svg" alt="">
-                    <span>カテゴリー名が入ります</span>
+              <div class="toppage-cards__item">
+                <a href="#">
+                  <img class="toppage-cards__item-img" src="./img/card-sample1.jpg" alt="">
+                  <h3>ごちそうスムージー</h3>
+                  <p>1人気のフルーツを贅沢に使用！華やかな香りと豊かな甘みのスムージー...</p>
+                  <div class="toppage-cards__item-props">
+                    <div class="toppage-cards__item-cat">
+                      <img src="./img/Icon-ionic-ios-flag-green.svg" alt="">
+                      <span>カテゴリー名が入ります</span>
+                    </div>
+                    <div class="toppage-cards__item-fav fav">
+                      <span>お気に入り</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                        <g transform="translate(-1067 -1915)">
+                          <rect width="23" height="23" transform="translate(1067 1915)" fill="#fff" />
+                          <path
+                            d="M11.5,1.495c.552-.575.552-.575,2.99-3.151a31.259,31.259,0,0,0,4.876-6.325,9.4,9.4,0,0,0,1.4-4.922,5.558,5.558,0,0,0-2.139-4.853,4.895,4.895,0,0,0-2.737-.874,5.515,5.515,0,0,0-2.346.529,3.89,3.89,0,0,0-1.725,2.645c-.115.69-.184.828-.322.828s-.161-.069-.322-.828a4.061,4.061,0,0,0-1.564-2.553,3.915,3.915,0,0,0-2.323-.621,4.458,4.458,0,0,0-3.91,1.909,6.824,6.824,0,0,0-1.15,3.772c0,2.254,1.127,4.922,3.381,7.889C7.13-3.036,7.544-2.576,11.5,1.495Z"
+                            transform="translate(1067 1935)" fill="#d9d9d9" />
+                        </g>
+                      </svg>
+                    </div>
                   </div>
-                  <div class="toppage-cards__item-fav fav">
-                    <span>お気に入り</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
-                      <g transform="translate(-1067 -1915)">
-                        <rect width="23" height="23" transform="translate(1067 1915)" fill="#fff" />
-                        <path
-                          d="M11.5,1.495c.552-.575.552-.575,2.99-3.151a31.259,31.259,0,0,0,4.876-6.325,9.4,9.4,0,0,0,1.4-4.922,5.558,5.558,0,0,0-2.139-4.853,4.895,4.895,0,0,0-2.737-.874,5.515,5.515,0,0,0-2.346.529,3.89,3.89,0,0,0-1.725,2.645c-.115.69-.184.828-.322.828s-.161-.069-.322-.828a4.061,4.061,0,0,0-1.564-2.553,3.915,3.915,0,0,0-2.323-.621,4.458,4.458,0,0,0-3.91,1.909,6.824,6.824,0,0,0-1.15,3.772c0,2.254,1.127,4.922,3.381,7.889C7.13-3.036,7.544-2.576,11.5,1.495Z"
-                          transform="translate(1067 1935)" fill="#d9d9d9" />
-                      </g>
-                    </svg>
+                </a>
+              </div>
+              <div class="toppage-cards__item">
+                <a href="#">
+                  <img class="toppage-cards__item-img" src="./img/card-sample2.jpg" alt="">
+                  <h3>季節限定！ごちそうスムージー</h3>
+                  <p>2人気のフルーツを贅沢に使用！華やか…</p>
+                  <div class="toppage-cards__item-props">
+                    <div class="toppage-cards__item-cat">
+                      <img src="./img/Icon-ionic-ios-flag-green.svg" alt="">
+                      <span>カテゴリー名が入ります</span>
+                    </div>
+                    <div class="toppage-cards__item-fav">
+                      <span>お気に入り</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                        <g transform="translate(-1067 -1915)">
+                          <rect width="23" height="23" transform="translate(1067 1915)" fill="#fff" />
+                          <path
+                            d="M11.5,1.495c.552-.575.552-.575,2.99-3.151a31.259,31.259,0,0,0,4.876-6.325,9.4,9.4,0,0,0,1.4-4.922,5.558,5.558,0,0,0-2.139-4.853,4.895,4.895,0,0,0-2.737-.874,5.515,5.515,0,0,0-2.346.529,3.89,3.89,0,0,0-1.725,2.645c-.115.69-.184.828-.322.828s-.161-.069-.322-.828a4.061,4.061,0,0,0-1.564-2.553,3.915,3.915,0,0,0-2.323-.621,4.458,4.458,0,0,0-3.91,1.909,6.824,6.824,0,0,0-1.15,3.772c0,2.254,1.127,4.922,3.381,7.889C7.13-3.036,7.544-2.576,11.5,1.495Z"
+                            transform="translate(1067 1935)" fill="#d9d9d9" />
+                        </g>
+                      </svg>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </div>
-            <div class="toppage-cards__item">
-              <a href="#">
-                <img class="toppage-cards__item-img" src="./img/card-sample2.jpg" alt="">
-                <h3>ごちそうスムージー</h3>
-                <p>2人気のフルーツを贅沢に使用！華やかな香りと豊かな甘みのスムージーにシャインマスカット味が新登場。砂糖・甘味料・増粘剤不使用の無添加にこだわりました。人気のフルーツを贅沢に使用！華やかな香りと豊かな甘みのスムージーにシャインマスカット味が新登場。砂糖・甘味料・増粘剤不使用の無添加にこだわりました。</p>
-                <div class="toppage-cards__item-props">
-                  <div class="toppage-cards__item-cat">
-                    <img src="./img/Icon-ionic-ios-flag-green.svg" alt="">
-                    <span>カテゴリー名が入ります</span>
+                </a>
+              </div>
+              <div class="toppage-cards__item">
+                <a href="#">
+                  <img class="toppage-cards__item-img" src="./img/card-sample1.jpg" alt="">
+                  <h3>ごちそうスムージー</h3>
+                  <p>
+                    3人気のフルーツを贅沢に使用！華やかな香りと豊かな甘みのスムージーにシャインマスカット味が新登場。砂糖・甘味料・増粘剤不使用の無添加にこだわりました。人気のフルーツを贅沢に使用！華やかな香りと豊かな甘みのスムージーにシャインマスカット味が新登場。砂糖・甘味料・増粘剤不使用の無添加にこだわりました。
+                  </p>
+                  <div class="toppage-cards__item-props">
+                    <div class="toppage-cards__item-cat">
+                      <img src="./img/Icon-ionic-ios-flag-green.svg" alt="">
+                      <span>カテゴリー名が入ります</span>
+                    </div>
+                    <div class="toppage-cards__item-fav">
+                      <span>お気に入り</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                        <g transform="translate(-1067 -1915)">
+                          <rect width="23" height="23" transform="translate(1067 1915)" fill="#fff" />
+                          <path
+                            d="M11.5,1.495c.552-.575.552-.575,2.99-3.151a31.259,31.259,0,0,0,4.876-6.325,9.4,9.4,0,0,0,1.4-4.922,5.558,5.558,0,0,0-2.139-4.853,4.895,4.895,0,0,0-2.737-.874,5.515,5.515,0,0,0-2.346.529,3.89,3.89,0,0,0-1.725,2.645c-.115.69-.184.828-.322.828s-.161-.069-.322-.828a4.061,4.061,0,0,0-1.564-2.553,3.915,3.915,0,0,0-2.323-.621,4.458,4.458,0,0,0-3.91,1.909,6.824,6.824,0,0,0-1.15,3.772c0,2.254,1.127,4.922,3.381,7.889C7.13-3.036,7.544-2.576,11.5,1.495Z"
+                            transform="translate(1067 1935)" fill="#d9d9d9" />
+                        </g>
+                      </svg>
+                    </div>
                   </div>
-                  <div class="toppage-cards__item-fav">
-                    <span>お気に入り</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
-                      <g transform="translate(-1067 -1915)">
-                        <rect width="23" height="23" transform="translate(1067 1915)" fill="#fff" />
-                        <path
-                          d="M11.5,1.495c.552-.575.552-.575,2.99-3.151a31.259,31.259,0,0,0,4.876-6.325,9.4,9.4,0,0,0,1.4-4.922,5.558,5.558,0,0,0-2.139-4.853,4.895,4.895,0,0,0-2.737-.874,5.515,5.515,0,0,0-2.346.529,3.89,3.89,0,0,0-1.725,2.645c-.115.69-.184.828-.322.828s-.161-.069-.322-.828a4.061,4.061,0,0,0-1.564-2.553,3.915,3.915,0,0,0-2.323-.621,4.458,4.458,0,0,0-3.91,1.909,6.824,6.824,0,0,0-1.15,3.772c0,2.254,1.127,4.922,3.381,7.889C7.13-3.036,7.544-2.576,11.5,1.495Z"
-                          transform="translate(1067 1935)" fill="#d9d9d9" />
-                      </g>
-                    </svg>
+                </a>
+              </div>
+              <div class="toppage-cards__item">
+                <a href="#">
+                  <img class="toppage-cards__item-img" src="./img/card-sample2.jpg" alt="">
+                  <h3>ごちそうスムージー</h3>
+                  <p>人気のフルーツを贅沢に使用！華やかな香りと豊かな甘みのスムージーにシャインマスカット味が新登場。砂糖・甘味料・増粘剤不使用の無添加にこだわりました。</p>
+                  <div class="toppage-cards__item-props">
+                    <div class="toppage-cards__item-cat">
+                      <img src="./img/Icon-ionic-ios-flag-green.svg" alt="">
+                      <span>カテゴリー名が入ります</span>
+                    </div>
+                    <div class="toppage-cards__item-fav">
+                      <span>お気に入り</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                        <g transform="translate(-1067 -1915)">
+                          <rect width="23" height="23" transform="translate(1067 1915)" fill="#fff" />
+                          <path
+                            d="M11.5,1.495c.552-.575.552-.575,2.99-3.151a31.259,31.259,0,0,0,4.876-6.325,9.4,9.4,0,0,0,1.4-4.922,5.558,5.558,0,0,0-2.139-4.853,4.895,4.895,0,0,0-2.737-.874,5.515,5.515,0,0,0-2.346.529,3.89,3.89,0,0,0-1.725,2.645c-.115.69-.184.828-.322.828s-.161-.069-.322-.828a4.061,4.061,0,0,0-1.564-2.553,3.915,3.915,0,0,0-2.323-.621,4.458,4.458,0,0,0-3.91,1.909,6.824,6.824,0,0,0-1.15,3.772c0,2.254,1.127,4.922,3.381,7.889C7.13-3.036,7.544-2.576,11.5,1.495Z"
+                            transform="translate(1067 1935)" fill="#d9d9d9" />
+                        </g>
+                      </svg>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </div>
-            <div class="toppage-cards__item">
-              <a href="#">
-                <img class="toppage-cards__item-img" src="./img/card-sample1.jpg" alt="">
-                <h3>ごちそうスムージー</h3>
-                <p>3人気のフルーツを贅沢に使用！華やかな香りと豊かな甘みのスムージーにシャインマスカット味が新登場。砂糖・甘味料・増粘剤不使用の無添加にこだわりました。人気のフルーツを贅沢に使用！華やかな香りと豊かな甘みのスムージーにシャインマスカット味が新登場。砂糖・甘味料・増粘剤不使用の無添加にこだわりました。</p>
-                <div class="toppage-cards__item-props">
-                  <div class="toppage-cards__item-cat">
-                    <img src="./img/Icon-ionic-ios-flag-green.svg" alt="">
-                    <span>カテゴリー名が入ります</span>
-                  </div>
-                  <div class="toppage-cards__item-fav">
-                    <span>お気に入り</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
-                      <g transform="translate(-1067 -1915)">
-                        <rect width="23" height="23" transform="translate(1067 1915)" fill="#fff" />
-                        <path
-                          d="M11.5,1.495c.552-.575.552-.575,2.99-3.151a31.259,31.259,0,0,0,4.876-6.325,9.4,9.4,0,0,0,1.4-4.922,5.558,5.558,0,0,0-2.139-4.853,4.895,4.895,0,0,0-2.737-.874,5.515,5.515,0,0,0-2.346.529,3.89,3.89,0,0,0-1.725,2.645c-.115.69-.184.828-.322.828s-.161-.069-.322-.828a4.061,4.061,0,0,0-1.564-2.553,3.915,3.915,0,0,0-2.323-.621,4.458,4.458,0,0,0-3.91,1.909,6.824,6.824,0,0,0-1.15,3.772c0,2.254,1.127,4.922,3.381,7.889C7.13-3.036,7.544-2.576,11.5,1.495Z"
-                          transform="translate(1067 1935)" fill="#d9d9d9" />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="toppage-cards__item">
-              <a href="#">
-                <img class="toppage-cards__item-img" src="./img/card-sample2.jpg" alt="">
-                <h3>ごちそうスムージー</h3>
-                <p>人気のフルーツを贅沢に使用！華やかな香りと豊かな甘みのスムージーにシャインマスカット味が新登場。砂糖・甘味料・増粘剤不使用の無添加にこだわりました。</p>
-                <div class="toppage-cards__item-props">
-                  <div class="toppage-cards__item-cat">
-                    <img src="./img/Icon-ionic-ios-flag-green.svg" alt="">
-                    <span>カテゴリー名が入ります</span>
-                  </div>
-                  <div class="toppage-cards__item-fav">
-                    <span>お気に入り</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
-                      <g transform="translate(-1067 -1915)">
-                        <rect width="23" height="23" transform="translate(1067 1915)" fill="#fff" />
-                        <path
-                          d="M11.5,1.495c.552-.575.552-.575,2.99-3.151a31.259,31.259,0,0,0,4.876-6.325,9.4,9.4,0,0,0,1.4-4.922,5.558,5.558,0,0,0-2.139-4.853,4.895,4.895,0,0,0-2.737-.874,5.515,5.515,0,0,0-2.346.529,3.89,3.89,0,0,0-1.725,2.645c-.115.69-.184.828-.322.828s-.161-.069-.322-.828a4.061,4.061,0,0,0-1.564-2.553,3.915,3.915,0,0,0-2.323-.621,4.458,4.458,0,0,0-3.91,1.909,6.824,6.824,0,0,0-1.15,3.772c0,2.254,1.127,4.922,3.381,7.889C7.13-3.036,7.544-2.576,11.5,1.495Z"
-                          transform="translate(1067 1935)" fill="#d9d9d9" />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-              </a>
-            </div>
+                </a>
+              </div>
             </div>
           </div>
           <div class="toppage-cards">
@@ -306,12 +318,318 @@
       </section>
     </div>
   </main>
-  <section>商品一覧</section>
-  <img src="./img/Icon-awesome-shopping-cart.svg" alt="">
-  <img src="./img/Icon-awesome-shopping-cart.svg" alt="">
-  <img src="./img/Icon-awesome-shopping-cart.svg" alt="">
-  <img src="./img/Icon-awesome-shopping-cart.svg" alt="">
-  <img src="./img/Icon-awesome-shopping-cart.svg" alt="">
-  <img src="./img/Icon-awesome-shopping-cart.svg" alt="">
+  <section class="all-cards">
+    <h2><img src="./img/Icon-metro-info.svg" alt=""><span>商品一覧</span></h2>
+    <div class="all-cards__inner js-slick">
+
+      <div class="all-cards__item">
+        <a href="#">
+          <img class="all-cards__item-thumb" src="./img/card-sample3.jpg" alt="">
+          <span class="all-cards__item-cc">新！美容専門プロテイン</span>
+          <h3>タンパクオトメ</h3>
+          <span class="all-cards__item-price">6,000円</span>
+          <span class="all-cards__item-fee">+送料620円</span>
+          <span class="all-cards__item-shop">タマチャンショップ</span>
+          <div class="all-cards__item-props">
+            <div class="all-cards__item-cat">
+              <img src="./img/Icon-ionic-ios-flag-brown.svg" alt="">
+              <span>健康食品</span>
+            </div>
+            <div class="all-cards__item-fav">
+              <span>お気に入り</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                <g transform="translate(-1067 -1915)">
+                  <rect width="23" height="23" transform="translate(1067 1915)" fill="#fff" />
+                  <path
+                    d="M11.5,1.495c.552-.575.552-.575,2.99-3.151a31.259,31.259,0,0,0,4.876-6.325,9.4,9.4,0,0,0,1.4-4.922,5.558,5.558,0,0,0-2.139-4.853,4.895,4.895,0,0,0-2.737-.874,5.515,5.515,0,0,0-2.346.529,3.89,3.89,0,0,0-1.725,2.645c-.115.69-.184.828-.322.828s-.161-.069-.322-.828a4.061,4.061,0,0,0-1.564-2.553,3.915,3.915,0,0,0-2.323-.621,4.458,4.458,0,0,0-3.91,1.909,6.824,6.824,0,0,0-1.15,3.772c0,2.254,1.127,4.922,3.381,7.889C7.13-3.036,7.544-2.576,11.5,1.495Z"
+                    transform="translate(1067 1935)" fill="#d9d9d9" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="all-cards__item">
+        <a href="#">
+          <img class="all-cards__item-thumb" src="./img/card-sample4.jpg" alt="">
+          <span class="all-cards__item-cc">キャッチコピー</span>
+          <h3>商品名</h3>
+          <span class="all-cards__item-price">6,000円</span>
+          <span class="all-cards__item-fee">+送料620円</span>
+          <span class="all-cards__item-shop">メーカー名</span>
+          <div class="all-cards__item-props">
+            <div class="all-cards__item-cat">
+              <img src="./img/Icon-ionic-ios-flag-brown.svg" alt="">
+              <span>カテゴリー名が入ります</span>
+            </div>
+            <div class="all-cards__item-fav">
+              <span>お気に入り</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                <g transform="translate(-1067 -1915)">
+                  <rect width="23" height="23" transform="translate(1067 1915)" fill="#fff" />
+                  <path
+                    d="M11.5,1.495c.552-.575.552-.575,2.99-3.151a31.259,31.259,0,0,0,4.876-6.325,9.4,9.4,0,0,0,1.4-4.922,5.558,5.558,0,0,0-2.139-4.853,4.895,4.895,0,0,0-2.737-.874,5.515,5.515,0,0,0-2.346.529,3.89,3.89,0,0,0-1.725,2.645c-.115.69-.184.828-.322.828s-.161-.069-.322-.828a4.061,4.061,0,0,0-1.564-2.553,3.915,3.915,0,0,0-2.323-.621,4.458,4.458,0,0,0-3.91,1.909,6.824,6.824,0,0,0-1.15,3.772c0,2.254,1.127,4.922,3.381,7.889C7.13-3.036,7.544-2.576,11.5,1.495Z"
+                    transform="translate(1067 1935)" fill="#d9d9d9" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="all-cards__item">
+        <a href="#">
+          <img class="all-cards__item-thumb" src="./img/card-sample5.jpg" alt="">
+          <span class="all-cards__item-cc">キャッチコピー</span>
+          <h3>商品名</h3>
+          <span class="all-cards__item-price">6,000円</span>
+          <span class="all-cards__item-fee">+送料620円</span>
+          <span class="all-cards__item-shop">メーカー名</span>
+          <div class="all-cards__item-props">
+            <div class="all-cards__item-cat">
+              <img src="./img/Icon-ionic-ios-flag-brown.svg" alt="">
+              <span>カテゴリー名が入ります</span>
+            </div>
+            <div class="all-cards__item-fav">
+              <span>お気に入り</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                <g transform="translate(-1067 -1915)">
+                  <rect width="23" height="23" transform="translate(1067 1915)" fill="#fff" />
+                  <path
+                    d="M11.5,1.495c.552-.575.552-.575,2.99-3.151a31.259,31.259,0,0,0,4.876-6.325,9.4,9.4,0,0,0,1.4-4.922,5.558,5.558,0,0,0-2.139-4.853,4.895,4.895,0,0,0-2.737-.874,5.515,5.515,0,0,0-2.346.529,3.89,3.89,0,0,0-1.725,2.645c-.115.69-.184.828-.322.828s-.161-.069-.322-.828a4.061,4.061,0,0,0-1.564-2.553,3.915,3.915,0,0,0-2.323-.621,4.458,4.458,0,0,0-3.91,1.909,6.824,6.824,0,0,0-1.15,3.772c0,2.254,1.127,4.922,3.381,7.889C7.13-3.036,7.544-2.576,11.5,1.495Z"
+                    transform="translate(1067 1935)" fill="#d9d9d9" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="all-cards__item">
+        <a href="#">
+          <img class="all-cards__item-thumb" src="./img/card-sample3.jpg" alt="">
+          <span class="all-cards__item-cc">新！美容専門プロテイン</span>
+          <h3>タンパクオトメ</h3>
+          <span class="all-cards__item-price">6,000円</span>
+          <span class="all-cards__item-fee">+送料620円</span>
+          <span class="all-cards__item-shop">タマチャンショップ</span>
+          <div class="all-cards__item-props">
+            <div class="all-cards__item-cat">
+              <img src="./img/Icon-ionic-ios-flag-brown.svg" alt="">
+              <span>健康食品</span>
+            </div>
+            <div class="all-cards__item-fav">
+              <span>お気に入り</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                <g transform="translate(-1067 -1915)">
+                  <rect width="23" height="23" transform="translate(1067 1915)" fill="#fff" />
+                  <path
+                    d="M11.5,1.495c.552-.575.552-.575,2.99-3.151a31.259,31.259,0,0,0,4.876-6.325,9.4,9.4,0,0,0,1.4-4.922,5.558,5.558,0,0,0-2.139-4.853,4.895,4.895,0,0,0-2.737-.874,5.515,5.515,0,0,0-2.346.529,3.89,3.89,0,0,0-1.725,2.645c-.115.69-.184.828-.322.828s-.161-.069-.322-.828a4.061,4.061,0,0,0-1.564-2.553,3.915,3.915,0,0,0-2.323-.621,4.458,4.458,0,0,0-3.91,1.909,6.824,6.824,0,0,0-1.15,3.772c0,2.254,1.127,4.922,3.381,7.889C7.13-3.036,7.544-2.576,11.5,1.495Z"
+                    transform="translate(1067 1935)" fill="#d9d9d9" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="all-cards__item">
+        <a href="#">
+          <img class="all-cards__item-thumb" src="./img/card-sample4.jpg" alt="">
+          <span class="all-cards__item-cc">キャッチコピー</span>
+          <h3>商品名</h3>
+          <span class="all-cards__item-price">6,000円</span>
+          <span class="all-cards__item-fee">+送料620円</span>
+          <span class="all-cards__item-shop">メーカー名</span>
+          <div class="all-cards__item-props">
+            <div class="all-cards__item-cat">
+              <img src="./img/Icon-ionic-ios-flag-brown.svg" alt="">
+              <span>カテゴリー名が入ります</span>
+            </div>
+            <div class="all-cards__item-fav">
+              <span>お気に入り</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                <g transform="translate(-1067 -1915)">
+                  <rect width="23" height="23" transform="translate(1067 1915)" fill="#fff" />
+                  <path
+                    d="M11.5,1.495c.552-.575.552-.575,2.99-3.151a31.259,31.259,0,0,0,4.876-6.325,9.4,9.4,0,0,0,1.4-4.922,5.558,5.558,0,0,0-2.139-4.853,4.895,4.895,0,0,0-2.737-.874,5.515,5.515,0,0,0-2.346.529,3.89,3.89,0,0,0-1.725,2.645c-.115.69-.184.828-.322.828s-.161-.069-.322-.828a4.061,4.061,0,0,0-1.564-2.553,3.915,3.915,0,0,0-2.323-.621,4.458,4.458,0,0,0-3.91,1.909,6.824,6.824,0,0,0-1.15,3.772c0,2.254,1.127,4.922,3.381,7.889C7.13-3.036,7.544-2.576,11.5,1.495Z"
+                    transform="translate(1067 1935)" fill="#d9d9d9" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="all-cards__item">
+        <a href="#">
+          <img class="all-cards__item-thumb" src="./img/card-sample5.jpg" alt="">
+          <span class="all-cards__item-cc">キャッチコピー</span>
+          <h3>商品名</h3>
+          <span class="all-cards__item-price">6,000円</span>
+          <span class="all-cards__item-fee">+送料620円</span>
+          <span class="all-cards__item-shop">メーカー名</span>
+          <div class="all-cards__item-props">
+            <div class="all-cards__item-cat">
+              <img src="./img/Icon-ionic-ios-flag-brown.svg" alt="">
+              <span>カテゴリー名が入ります</span>
+            </div>
+            <div class="all-cards__item-fav">
+              <span>お気に入り</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                <g transform="translate(-1067 -1915)">
+                  <rect width="23" height="23" transform="translate(1067 1915)" fill="#fff" />
+                  <path
+                    d="M11.5,1.495c.552-.575.552-.575,2.99-3.151a31.259,31.259,0,0,0,4.876-6.325,9.4,9.4,0,0,0,1.4-4.922,5.558,5.558,0,0,0-2.139-4.853,4.895,4.895,0,0,0-2.737-.874,5.515,5.515,0,0,0-2.346.529,3.89,3.89,0,0,0-1.725,2.645c-.115.69-.184.828-.322.828s-.161-.069-.322-.828a4.061,4.061,0,0,0-1.564-2.553,3.915,3.915,0,0,0-2.323-.621,4.458,4.458,0,0,0-3.91,1.909,6.824,6.824,0,0,0-1.15,3.772c0,2.254,1.127,4.922,3.381,7.889C7.13-3.036,7.544-2.576,11.5,1.495Z"
+                    transform="translate(1067 1935)" fill="#d9d9d9" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="all-cards__item">
+        <a href="#">
+          <img class="all-cards__item-thumb" src="./img/card-sample3.jpg" alt="">
+          <span class="all-cards__item-cc">新！美容専門プロテイン</span>
+          <h3>タンパクオトメ</h3>
+          <span class="all-cards__item-price">6,000円</span>
+          <span class="all-cards__item-fee">+送料620円</span>
+          <span class="all-cards__item-shop">タマチャンショップ</span>
+          <div class="all-cards__item-props">
+            <div class="all-cards__item-cat">
+              <img src="./img/Icon-ionic-ios-flag-brown.svg" alt="">
+              <span>健康食品</span>
+            </div>
+            <div class="all-cards__item-fav">
+              <span>お気に入り</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                <g transform="translate(-1067 -1915)">
+                  <rect width="23" height="23" transform="translate(1067 1915)" fill="#fff" />
+                  <path
+                    d="M11.5,1.495c.552-.575.552-.575,2.99-3.151a31.259,31.259,0,0,0,4.876-6.325,9.4,9.4,0,0,0,1.4-4.922,5.558,5.558,0,0,0-2.139-4.853,4.895,4.895,0,0,0-2.737-.874,5.515,5.515,0,0,0-2.346.529,3.89,3.89,0,0,0-1.725,2.645c-.115.69-.184.828-.322.828s-.161-.069-.322-.828a4.061,4.061,0,0,0-1.564-2.553,3.915,3.915,0,0,0-2.323-.621,4.458,4.458,0,0,0-3.91,1.909,6.824,6.824,0,0,0-1.15,3.772c0,2.254,1.127,4.922,3.381,7.889C7.13-3.036,7.544-2.576,11.5,1.495Z"
+                    transform="translate(1067 1935)" fill="#d9d9d9" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="all-cards__item">
+        <a href="#">
+          <img class="all-cards__item-thumb" src="./img/card-sample4.jpg" alt="">
+          <span class="all-cards__item-cc">キャッチコピー</span>
+          <h3>商品名</h3>
+          <span class="all-cards__item-price">6,000円</span>
+          <span class="all-cards__item-fee">+送料620円</span>
+          <span class="all-cards__item-shop">メーカー名</span>
+          <div class="all-cards__item-props">
+            <div class="all-cards__item-cat">
+              <img src="./img/Icon-ionic-ios-flag-brown.svg" alt="">
+              <span>カテゴリー名が入ります</span>
+            </div>
+            <div class="all-cards__item-fav">
+              <span>お気に入り</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                <g transform="translate(-1067 -1915)">
+                  <rect width="23" height="23" transform="translate(1067 1915)" fill="#fff" />
+                  <path
+                    d="M11.5,1.495c.552-.575.552-.575,2.99-3.151a31.259,31.259,0,0,0,4.876-6.325,9.4,9.4,0,0,0,1.4-4.922,5.558,5.558,0,0,0-2.139-4.853,4.895,4.895,0,0,0-2.737-.874,5.515,5.515,0,0,0-2.346.529,3.89,3.89,0,0,0-1.725,2.645c-.115.69-.184.828-.322.828s-.161-.069-.322-.828a4.061,4.061,0,0,0-1.564-2.553,3.915,3.915,0,0,0-2.323-.621,4.458,4.458,0,0,0-3.91,1.909,6.824,6.824,0,0,0-1.15,3.772c0,2.254,1.127,4.922,3.381,7.889C7.13-3.036,7.544-2.576,11.5,1.495Z"
+                    transform="translate(1067 1935)" fill="#d9d9d9" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="all-cards__item">
+        <a href="#">
+          <img class="all-cards__item-thumb" src="./img/card-sample5.jpg" alt="">
+          <span class="all-cards__item-cc">キャッチコピー</span>
+          <h3>商品名</h3>
+          <span class="all-cards__item-price">6,000円</span>
+          <span class="all-cards__item-fee">+送料620円</span>
+          <span class="all-cards__item-shop">メーカー名</span>
+          <div class="all-cards__item-props">
+            <div class="all-cards__item-cat">
+              <img src="./img/Icon-ionic-ios-flag-brown.svg" alt="">
+              <span>カテゴリー名が入ります</span>
+            </div>
+            <div class="all-cards__item-fav">
+              <span>お気に入り</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                <g transform="translate(-1067 -1915)">
+                  <rect width="23" height="23" transform="translate(1067 1915)" fill="#fff" />
+                  <path
+                    d="M11.5,1.495c.552-.575.552-.575,2.99-3.151a31.259,31.259,0,0,0,4.876-6.325,9.4,9.4,0,0,0,1.4-4.922,5.558,5.558,0,0,0-2.139-4.853,4.895,4.895,0,0,0-2.737-.874,5.515,5.515,0,0,0-2.346.529,3.89,3.89,0,0,0-1.725,2.645c-.115.69-.184.828-.322.828s-.161-.069-.322-.828a4.061,4.061,0,0,0-1.564-2.553,3.915,3.915,0,0,0-2.323-.621,4.458,4.458,0,0,0-3.91,1.909,6.824,6.824,0,0,0-1.15,3.772c0,2.254,1.127,4.922,3.381,7.889C7.13-3.036,7.544-2.576,11.5,1.495Z"
+                    transform="translate(1067 1935)" fill="#d9d9d9" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- <div style="height:100vh"></div> -->
+
+    </div>
+  </section>
+  <seciton class="featured">
+    <h2><img src="./img/Icon-metro-info.svg" alt=""><span>特集</span></h2>
+    <div class="featured__inner">
+      <ul class="featured__banners">
+        <li><a href="#"><img src="./img/feature1.jpg" alt=""></a></li>
+        <li><a href="#"><img src="./img/feature2.jpg" alt=""></a></li>
+        <li><a href="#"><img src="./img/feature3.jpg" alt=""></a></li>
+      </ul>
+      <!-- <div style="height:100vh"></div> -->
+    </div>
+  </seciton>
+
+
+
+  <!-- Slick起動のための3モジュール読み込み -->
+  <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+  <script src="//code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- Slickの起動 -->
+  <script>
+    $(document).ready(function() {
+      $('.js-slick').slick({
+        // infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 2,
+        arrows: false,
+        centerMode: true,
+        swipeToSlide: true,
+        // centerPadding: "200px",
+        responsive: [
+          {
+            breakpoint: 1500,
+            settings: {
+              slidesToShow: 4,
+            }
+          },
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 3,
+            }
+          },
+          {
+            breakpoint: 900,
+            settings: {
+              slidesToShow: 2,
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+            }
+          },
+        ]
+      });
+    });
+  </script>
 </body>
+
 </html>
