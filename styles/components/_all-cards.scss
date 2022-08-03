@@ -1,0 +1,152 @@
+.all-cards {
+  background-color: $orange-light;
+  margin-bottom: 70px;
+  &__inner {
+    background-color: white;
+    padding-top: 40px;
+
+    @media (max-width:$break-point) {
+      padding-top: 30px;
+    }
+  }
+
+  h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    margin: 0 auto -20px;
+    color: $orange;
+    z-index: 2;
+    position: relative;
+
+    img {
+      margin-top: 15px;
+    }
+
+    @media (max-width:$break-point) {
+      margin-top: 10px;
+      background-color: $orange;
+      color: white;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      width: auto;
+      height: 40px;
+
+      img {
+        display: none;
+      }
+    }
+  }
+
+  &__item {
+    max-width: 310px;
+    // background-color: $gray-light;
+    display: inline-block;
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgba(black, .16);
+    margin: 10px;
+
+    &-thumb {
+      display: block;
+      width: 100%;
+      border-top-left-radius: 10px;
+      margin-bottom: 15px;
+
+      @media (max-width:$break-point) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &-cc {
+      font-size: 20px;
+      // color: $orange;
+    }
+
+    h3 {
+      font-size: 18px;
+      color: $brown;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      padding-bottom: 10px;
+      border-bottom: 2px dashed $brown;
+    }
+
+    &-price {
+      font-size: 20px;
+      // color: $orange;
+      margin-right: 5px;
+      margin-left: 1px;
+
+      @media (max-width:$break-point) {
+        font-size: 16px;
+      }
+    }
+
+    &-fee {
+      color: $brown;
+
+      @media (max-width:$break-point) {
+        font-size: 13px;
+      }
+    }
+
+    &-shop {
+      color: $green;
+      display: block;
+      margin-top: 5px;
+
+      @media (max-width:$break-point) {
+        font-size: 13px;
+        margin-bottom: 5px;
+      }
+    }
+
+    &-props {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    &-cat {
+      color: $brown;
+      display: flex;
+      font-size: 15px;
+      line-height: 1;
+
+      @media (max-width:$break-point) {
+        font-size: 13px;
+      }
+
+      img {
+        vertical-align: bottom;
+        margin-right: 3px;
+      }
+    }
+
+    &-fav {
+      color: $gray-mute;
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+
+      @media (max-width:$break-point) {
+        svg {
+          width: 19px;
+          height: 19px;
+        }
+      }
+
+      span {
+        @media (min-width:$break-point) {
+          display: none;
+        }
+      }
+    }
+  }
+}
