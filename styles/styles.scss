@@ -62,62 +62,9 @@ a{
 @import './components/important-notice'; // トップページ「重要なお知らせ」
 @import './components/toppage-cards'; // トップページ「新着商品」「人気商品」
 @import './components/all-cards'; // トップページ「商品一覧」
+@import './components/featured'; // トップページ「特集」
 
-.featured{
-  // padding-top: 60px;
-  background-color: white;
-  &__inner {
-    background-color: $orange-light;
-    padding-top: 40px;
-    // max-width: $content-width;
-    // margin: 0 auto;
-    padding-bottom: 80px;
-    @media (max-width:$break-point) {
-      padding-top: 30px;
-    }
-  }
-  h2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 200px;
-    height: 100px;
-    background-color: $orange-light;
-    border-top-left-radius: 100px;
-    border-top-right-radius: 100px;
-    margin: 0 auto -20px;
-    color: $orange;
-    z-index: 2;
-    position: relative;
 
-    img {
-      margin-top: 15px;
-    }
-
-    @media (max-width:$break-point) {
-      margin-top: 10px;
-      background-color: $orange;
-      color: white;
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
-      width: auto;
-      height: 40px;
-
-      img {
-        display: none;
-      }
-    }
-  }
-  &__banners{
-    max-width: $content-width;
-    margin: 40px auto 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-}
 
 .guide-cta{
   background-color: $green-light;
@@ -130,7 +77,6 @@ a{
   h2{
     color: $green;
     font-size: 22px;
-    // text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -175,13 +121,12 @@ a{
   }
   &__under{
     display: flex;
-    // margin-bottom: 80px;
+
     >div{
       width: 50%;
       flex-grow: 1;
       padding-right: 30px;
 
-      // margin-right: 30px;
       &:last-child{
         margin-right: 0;
         padding-right: 0;
@@ -218,7 +163,6 @@ a{
             display: block;
             width: 100%;
             border-radius: 10px;
-            // height: 240px;
           }
         }
       }
@@ -290,6 +234,9 @@ a{
       display: flex;
     }
     &__arrow{
+      @media (max-width:$content-width) {
+        display: none;
+      }
       font-size: 18px;
       margin-top: 0;
       margin-right: 70px;
@@ -306,12 +253,112 @@ a{
       margin-top: 0;
       margin-right: 100px;
       font-size: 22px;
+      @media (max-width:$content-width) {
+        display: none;
+      }
+      @media (max-width:$break-point) {
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 100%;
+        margin-bottom: 10px;
+      }
       li{
         margin-bottom: 8px;
+        img{
+          @media (min-width:$break-point) {
+            display: none;
+          }
+        }
+        @media (max-width:$break-point) {
+          margin-bottom: 0;
+          box-sizing: border-box;
+          font-size: 14px;
+          flex: 0 0 auto;
+          border: 1px solid $gray-light;
+          width: 50%;
+          display: block;
+          a{
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+          }
+        }
+        &:nth-child(2n){
+          @media (max-width:$break-point) {
+            border-left: none ;
+          }
+        }
+        &:first-child, &:nth-child(2){
+          @media (max-width:$break-point) {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+  &-bottom{
+    &__navi{
+      background-color: $orange-light;
+      @media (max-width:$content-width) {
+        display: none;
+      }
+      &__inner{
+        max-width: $content-width;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        h4{
+          font-size: 29px;
+          color: $orange;
+          margin: 0;
+          margin-right: 60px;
+        }
+        ul{
+          display: flex;
+          font-size: 18px;
+          margin: 0;
+          li{
+            border-right: 2px solid $orange;
+            line-height: 30px;
+            &:last-child{
+              border-right: none;
+            }
+            a{
+              color: $gray-dark;
+              padding-left: 20px;
+              padding-right: 20px;
+              &.orange{
+                color: $orange;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__copy{
+      background-color: $orange;
+      color: white;
+      font-size: 20px;
+      padding: 10px;
+      text-align: center;
+      @media (max-width:$content-width) {
+        font-size: 14px;
+      }
+    }
+    &__by{
+      color: $gray;
+      font-size: 14px;
+      text-align: center;
+      padding: 10px 20px;
+      @media (max-width:$content-width) {
+        font-size: 12px;
+        padding-bottom: 80px;
       }
     }
   }
 }
+
 
 
 
