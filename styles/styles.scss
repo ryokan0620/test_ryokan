@@ -177,11 +177,14 @@ a{
     display: flex;
     // margin-bottom: 80px;
     >div{
-      max-width: 50%;
+      width: 50%;
       flex-grow: 1;
-      margin-right: 30px;
+      padding-right: 30px;
+
+      // margin-right: 30px;
       &:last-child{
         margin-right: 0;
+        padding-right: 0;
       }
     }
     &-item{
@@ -206,6 +209,105 @@ a{
           font-size: 20px;
           line-height: 1.5;
         }
+      }
+      &--banner{
+        a{
+          padding: 0;
+          height: auto;
+          img{
+            display: block;
+            width: 100%;
+            border-radius: 10px;
+            // height: 240px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer{
+  &-upper{
+    &__inner{
+      max-width: $content-width;
+      margin: 0 auto;
+    }
+  }
+  &__navi{
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 65px;
+    @media (max-width:$content-width) {
+      display: none;
+    }
+    >li{
+      margin-right: 50px;
+    }
+    &-item{
+      border-left: 5px solid $orange;
+      padding-left: 8px;
+      >a{
+        font-size: 20px;
+      }
+      ul{
+        margin-top: 20px;
+        li{
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  &__banners{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media (max-width:$content-width) {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    @media (max-width:$break-point) {
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+    li{
+      margin-bottom: 20px;
+      flex: 0 0 auto;
+      width: 49%;
+      @media (max-width:$break-point) {
+        width: auto;
+        margin-bottom: 10px;
+      }
+      img{
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+  &-middle{
+    &__inner{
+      max-width: $content-width;
+      margin: 0 auto;
+      display: flex;
+    }
+    &__arrow{
+      font-size: 18px;
+      margin-top: 0;
+      margin-right: 70px;
+      li{
+        margin-bottom: 10px;
+        &:before{
+          content: "▶";
+          color: $green;
+          margin-right: 5px;
+        }
+      }
+    }
+    &__button{
+      margin-top: 0;
+      margin-right: 100px;
+      font-size: 22px;
+      li{
+        margin-bottom: 8px;
       }
     }
   }
