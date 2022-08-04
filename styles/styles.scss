@@ -9,6 +9,14 @@ body{
   color: $brown;
 }
 
+// FOUT回避 https://mightyace.co.jp/2021/03/29/column2886/
+html{
+  visibility: hidden;
+  &.wf-active{
+    visibility: visible;
+  }
+}
+
 ul{
   list-style: none;
   padding-left: 0;

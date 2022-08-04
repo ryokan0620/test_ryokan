@@ -350,6 +350,14 @@ body {
   color: #5C3C20;
 }
 
+html {
+  visibility: hidden;
+}
+
+html.wf-active {
+  visibility: visible;
+}
+
 ul {
   list-style: none;
   padding-left: 0;
