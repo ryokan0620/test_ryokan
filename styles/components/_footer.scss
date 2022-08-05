@@ -1,0 +1,229 @@
+.footer {
+  &-upper {
+    &__inner {
+      max-width: $content-width;
+      margin: 0 auto;
+    }
+  }
+
+  &__navi {
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 65px;
+
+    @media (max-width:$content-width) {
+      display: none;
+    }
+
+    >li {
+      margin-right: 50px;
+    }
+
+    &-item {
+      border-left: 5px solid $orange;
+      padding-left: 8px;
+
+      >a {
+        font-size: 20px;
+      }
+
+      ul {
+        margin-top: 20px;
+
+        li {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  &__banners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media (max-width:$content-width) {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    @media (max-width:$break-point) {
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+
+    li {
+      margin-bottom: 20px;
+      flex: 0 0 auto;
+      width: 49%;
+
+      @media (max-width:$break-point) {
+        width: auto;
+        margin-bottom: 10px;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+
+  &-middle {
+    &__inner {
+      max-width: $content-width;
+      margin: 0 auto;
+      display: flex;
+    }
+
+    &__arrow {
+      @media (max-width:$content-width) {
+        display: none;
+      }
+
+      font-size: 18px;
+      margin-top: 0;
+      margin-right: 70px;
+
+      li {
+        margin-bottom: 10px;
+
+        &:before {
+          content: "▶";
+          color: $green;
+          margin-right: 5px;
+        }
+      }
+    }
+
+    &__button {
+      margin-top: 0;
+      margin-right: 100px;
+      font-size: 22px;
+
+      @media (max-width:$content-width) {
+        display: none;
+      }
+
+      @media (max-width:$break-point) {
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 100%;
+        margin-bottom: 10px;
+      }
+
+      li {
+        margin-bottom: 8px;
+
+        img {
+          @media (min-width:$break-point) {
+            display: none;
+          }
+        }
+
+        @media (max-width:$break-point) {
+          margin-bottom: 0;
+          box-sizing: border-box;
+          font-size: 14px;
+          flex: 0 0 auto;
+          border: 1px solid $gray-light;
+          width: 50%;
+          display: block;
+
+          a {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+          }
+        }
+
+        &:nth-child(2n) {
+          @media (max-width:$break-point) {
+            border-left: none;
+          }
+        }
+
+        &:first-child,
+        &:nth-child(2) {
+          @media (max-width:$break-point) {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+
+  &-bottom {
+    &__navi {
+      background-color: $orange-light;
+
+      @media (max-width:$content-width) {
+        display: none;
+      }
+
+      &__inner {
+        max-width: $content-width;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+
+        h4 {
+          font-size: 29px;
+          color: $orange;
+          margin: 0;
+          margin-right: 60px;
+        }
+
+        ul {
+          display: flex;
+          font-size: 18px;
+          margin: 0;
+
+          li {
+            border-right: 2px solid $orange;
+            line-height: 30px;
+
+            &:last-child {
+              border-right: none;
+            }
+
+            a {
+              color: $gray-dark;
+              padding-left: 20px;
+              padding-right: 20px;
+
+              &.orange {
+                color: $orange;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__copy {
+      background-color: $orange;
+      color: white;
+      font-size: 20px;
+      padding: 10px;
+      text-align: center;
+
+      @media (max-width:$content-width) {
+        font-size: 14px;
+      }
+    }
+
+    &__by {
+      color: $gray;
+      font-size: 14px;
+      text-align: center;
+      padding: 10px 20px;
+
+      @media (max-width:$content-width) {
+        font-size: 12px;
+        padding-bottom: 80px;
+      }
+    }
+  }
+}

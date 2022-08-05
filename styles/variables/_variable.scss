@@ -3,6 +3,7 @@ $orange-light: #FFF8EA;
 $orange: #FF6400;
 $green-light: #F4FCF3;
 $green: #21B209;
+$brown-white:#FFF8EA;
 $brown-light: #E4D5B3;
 $brown: #5C3C20;
 $gray-light: #EBEBEB;
@@ -15,5 +16,6 @@ $content-width: 1080px;
 $side-width: 280px;
 $break-point: 768px;
 
+$article-width: calc( #{$content-width} - 160px );
 $main-width: calc( #{$content-width} - #{$side-width} - 40px );
 $break-point-minus-1: calc( #{$break-point} - 1px );
