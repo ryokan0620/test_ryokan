@@ -5,9 +5,13 @@
     background-color: $orange-light;
     padding-top: 40px;
     padding-bottom: 80px;
+    @media (max-width:$content-width) {
+      padding-bottom: 30px;
+    }
 
     @media (max-width:$break-point) {
       padding-top: 30px;
+      background-color: white;
     }
   }
 
@@ -50,7 +54,39 @@
     margin: 40px auto 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: center;
+    li{
+      margin-right: 30px;
+      &:last-child{
+        margin-right: 0;
+      }
+      @media (max-width:$break-point) {
+        margin-right: 10px;
+        width: 100%;
+      }
+    }
+    @media (max-width:$content-width) {
+      margin-top: 0;
+      margin-left: 20px;
+      margin-right: 20px;
+      img{
+        display: block;
+        width: 100%;
+      }
+    }
+    &-sp{
+      box-shadow: 3px 3px 3px rgba(black, 0.16);
+      border-radius: 10px;
+      @media (min-width:$break-point) {
+        display: none !important;
+      }
+    }
+    &-pc{
+      box-shadow: 5px 5px 5px rgba(black,0.16);
+      border-radius: 10px;
+      @media (max-width:$break-point-minus-1) {
+        display: none !important;
+      }
+    }
   }
 }

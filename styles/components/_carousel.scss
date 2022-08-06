@@ -1,11 +1,13 @@
 .carousel {
+  @media (max-width:$break-point) {
+    display: none;
+  }
   &-main {
     img {
       display: block;
       width: 100%;
     }
   }
-
   &-sub {
     width: 100%;
 

@@ -1,0 +1,47 @@
+.carousel-sp{
+  @media (min-width:$break-point) {
+    display: none;
+  }
+  img{
+    display: block;
+    width: 100%;
+  }
+  .slick-dots{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 12.5px;
+    margin-bottom: 12.5px;
+    margin-right: 20px;
+    li{
+      width: 15px;
+      height: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &.slick-active{
+        button:before{
+          background-color: $orange;
+        }
+      }
+    }
+    button{
+      font-size: 0;
+      line-height: 0;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      &:before{
+        content: "";
+        display: block;
+        width: 8px;
+        height: 8px;
+        border: 1px solid $orange;
+        border-radius: 5px;
+        .slick-active &{
+          background-color: $orange;
+
+        }
+      }
+    }
+  }
+}
