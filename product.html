@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes">
+  <title>健達ねっと</title>
+  <!-- Adobe Font の読み込み -->
+  <script>
+    (function (d) {
+      var config = {
+        kitId: 'uqj5jre',
+        scriptTimeout: 3000,
+        async: true
+      },
+        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
+  <!-- SlickのCSS読み込み -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- メインCSS -->
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+      <a class="header__logo" href="#">
+        <img class="header__logo-img-pc" src="./img/logo-desktop.png" alt="家族の介護と健康を支える学研の情報サイト｜健達ねっと">
+        <img class="header__logo-img-sp" src="./img/logo-smartphone.png" alt="家族の介護と健康を支える学研の情報サイト｜健達ねっと">
+      </a>
+      <form class="search-box">
+        <div class="search-box__sel-container">
+          <select class="search-box__sel" name="" id="">
+            <option value="">全ての商品</option>
+            <option value="">食品</option>
+            <option value="">健康・医療品</option>
+            <option value="">インテリア・寝具</option>
+            <option value="">ドリンク・健康飲料</option>
+            <option value="">衣料品・靴</option>
+            <option value="">本・電子書籍</option>
+            <option value="">特集</option>
+          </select>
+          <img src="./img/Icon-feather-triangle.svg" alt="">
+        </div>
+        <input class="search-box__input" type="text" placeholder="キーワード検索">
+        <button class="search-box__btn" type="submit"><img src="./img/Icon-awesome-search.svg" alt="検索"></button>
+      </form>
+      <div class="header__navi">
+        <a href="#"><img src="./img/Icon-awesome-shopping-cart.svg" alt="カート"><span>カートを見る</span></a>
+        <a href="#"><img src="./img/Icon-awesome-user.svg" alt="カート"><span>会員登録はこちら</span></a>
+      </div>
+    </div>
+  </header>
+
+  <article class="article">
+    <div class="article__inner">
+      <h2>必要なものだけをこの一杯に。</h2>
+      <img src="./img/article-sample1.jpg" alt="">
+      <p>「食べる美容」を追求した、自然食品屋さんの美容専門プロテインです。<br />女性のための栄養を徹底追求しました！<br /><br /> ■WPI&SOYハイクオリティープロテイン<br />
+        ■1日分のビタミン・ミネラルをほぼ充足<br />■オールインワン美容成分配合<br>■人工甘味料・乳化剤・グルテン・増粘剤・植物油脂フリー<br>（アセスルファムK・アスパルテーム不使用）</p>
+      <h4>小見出しが入ります</h4>
+      <img src="./img/article-sample2.jpg" alt="">
+      <p>「食べる美容」を追求した、自然食品屋さんの美容専門プロテインです。<br />女性のための栄養を徹底追求しました！<br /><br /> ■WPI&SOYハイクオリティープロテイン<br />
+        ■1日分のビタミン・ミネラルをほぼ充足<br />■オールインワン美容成分配合<br>■人工甘味料・乳化剤・グルテン・増粘剤・植物油脂フリー<br>（アセスルファムK・アスパルテーム不使用）</p>
+      <h4>小見出しが入ります</h4>
+      <img src="./img/article-sample3.jpg" alt="">
+      <p>「食べる美容」を追求した、自然食品屋さんの美容専門プロテインです。<br>
+        女性のための栄養を徹底追求しました！<br><br>
+        ■WPI&SOYハイクオリティープロテイン<br>
+        ■1日分のビタミン・ミネラルをほぼ充足<br>
+        ■オールインワン美容成分配合<br>
+        ■人工甘味料・乳化剤・グルテン・増粘剤・植物油脂フリー<br>
+        （アセスルファムK・アスパルテーム不使用）</p>
+    </div>
+  </article>
+  <section class="description-box">
+    <h3 class="description-box__title">商品詳細情報</h3>
+    <div class="description-box__inner">
+      <ul>
+        <li>
+          <h6>■賞味期限</h6>
+          <p>約20ヶ月</p>
+        </li>
+        <li>
+          <h6>■保存方法</h6>
+          <p>直射日光、高温多湿の場所を避けて保存し、開封後はお早めにお召し上がりください。</p>
+        </li>
+        <li>
+          <h6>■可能温度帯</h6>
+          <p>常温</p>
+        </li>
+
+        <li>
+          <h6>■内容量</h6>
+          <p>チャイ/ベリー/カカオ/朝バナナ/休息 260g<br />ピュアプロテイン/やさいプロテイン 360g</p>
+        </li>
+        <li>
+          <h6>■使用方法</h6>
+          <p>1日約15gを目安として摂取して下さい。<br>
+            水やアーモンドミルク等に溶いてお召し上がり下さい。<br><br>
+            食生活は、主食、主菜、副菜を基本に食事のバランスを。<br>
+            ※本品は、多量摂取により疾病が治癒したり、より健康が増進するものではありません。<br>
+            ※1日の摂取目安量をお守り下さい。<br>
+            ※本品は、特定保健用食品と異なり、消費者庁長官による個別審査を受けたものではありません。<br>
+            ※葉酸は、胎児の正常な発育に寄与する栄養素ですが、多量摂取により胎児の発育が良くなるものではありません。<br>
+            ※原材料で食品アレルギーの心配のある方、体調や体質に合わない場合は使用を中止してください。通院、投薬中の方は担当医にご相談の上お召し上がりください。</p>
+        </li>
+        <li>
+          <h6>■原材料</h6>
+          <p>【すこやか朝バナナ味(ノンカフェイン)】<br>
+            大豆たんぱく（大豆を含む(国内製造)：遺伝子組み換えでない）、乳清たんばく(乳成分を含む)、バナナピューレ（バナナを含む)、デキストリン、海藻力ルシウム、オリゴ糖、 ビール酵母、
+            りんこファイバー(りんごを含む)、グルコマンナン、コ
+            ラーケンペプチド (鮭由来ゼラチン)、
+            赤ワインエキス末、アサイー末、カカオエキス末、乳酸菌（還元澱粉糖化物、乳酸菌）ビタミンC、クエン酸、酸化マグネシウム、甘味料（羅漢果抽出物）、ヘム鉄、香料、ナイアシン、コエンザイムQ10、ヒアルロン酸、グルコン酸亜鉛、ビタミンE、パントテン酸カルシウム、ビタミンB1、ビタミンB6、ビタミンB2、ビタミンA、葉酸、ビタミンD3、ビタミンB12<br><br>
+            【ほんのりチャイ味(ノンカフェイン)】<br>
+            大豆たんぱく（大豆を含む(国内製造)：遺伝子組み換えでない）、乳清たんぱく(乳成分を含む)、海藻カルシウム、オリゴ糖、ビール酵母、りんごファイバー(りんごを含む)、グルコマンナン、コラーゲンペプチド(鮭由来ゼラチン)、赤ワインエキ
+            ス末、アサイー末、カカオエキス末、乳酸菌(還元澱粉糖化物、乳酸菌)/ビタミンC、クエン酸、酸化マグネシウム、甘味料(羅漢果抽出物)、ヘム鉄、香料、ナイアシン、コエンザイムQ10、ヒアルロン酸、グルコン酸亜鉛、ビタミンE、パントテン
+            酸カルシウム、ビタミンB1、ビタミンB6、ビタミンB2、ビタミンA、葉酸、ビタミンD3、ビタミンB12<br><br>
+            【ぜいたくベリー味(ノンカフェイン)】<br>
+            大豆たんぱく（大豆を含む(国内製造)：遺伝子組み換えでない）、乳清たんぱく(乳成分を含む)、 海藻カルシウム、オリゴ糖、ビール酵母、カシスエキス末、りんごファイバー(りんごを含む)、 グルコマンナン、コラーゲンペプチド
+            (鮭由来ゼラチン)、赤ワインエキス末、 アサイー末、カカオエキス末、乳酸菌(還元澱粉糖化物、乳酸菌)/ビタミンC、クエン酸、酸化マグネシウム、 甘味料(羅漢果抽出物)、ヘム鉄、香料、ナイアシン、コエンザイムQ10
+            、ヒアルロン酸、グルコン酸亜鉛、ビタミンE、パントテン酸カルシウム、 ビタミンB1、ビタミンB6、ビタミンB2、ビタミンA、葉酸、ビタミンD3、ビタミンB12<br><br>
+            【まろやかカカオ味(ノンカフェイン)】<br>
+            大豆たんぱく（大豆を含む(国内製造)：遺伝子組み換えでない）、乳清たんぱく（乳成分を含む）、ココアパウダー、 海藻カルシウム、オリゴ糖、ビール酵母、りんごファイバー（りんごを含む）、
+            グルコマンナン、コラーゲンペプチド（鮭由来ゼラチン）、赤ワインエキス末、 アサイー末、カカオエキス末、乳酸菌（還元澱粉糖化物、乳酸菌）/ビタミンC、クエン酸、酸化マグネシウム、
+            甘味料（羅漢果抽出物）、ヘム鉄、香料、ナイアシン、コエンザイムQ10
+            、ヒアルロン酸、グルコン酸亜鉛、ビタミンE、パントテン酸カルシウム、ビタミンB1、ビタミンB6、ビタミンB2、ビタミンA、葉酸、ビタミンD3、ビタミンB12<br><br>
+            【ピュアプロテイン100(ノンカフェイン)】<br>
+            大豆たんぱく（大豆を含む(国内製造)：遺伝子組み換えでない）、乳清タンパク(乳成分を含む)<br><br>
+            【やさいプロテイン100(ノンカフェイン)】<br>
+            植物性たんぱく(大豆たんぱく)(大豆を含む/遺伝子組み換え無し(国内製造)、えんどう豆たんぱく、かぼちゃ種子粉末、モリンガ粉末、ブロッコリー粉末、アーモンド粉末、大豆ペプチド、ポテト抽出物)<br><br>
+            【休息プロテイン（ミックスフルーツ味）】<br>
+            大豆たんぱく（大豆を含む：遺伝子組み換えでない）（国内製造）、乳清たんぱく（乳成分を含む）、パイナップル果汁末、デキストリン、海藻カルシウム、オリゴ糖、ビール酵母、りんごファイバー（リンゴを含む）、グルコマンナン、コラーゲンペプチド（鮭由来ゼラチン）、赤ワインエキス末、ＧＡＢＡ、アサイー末、カカオエキス末、乳酸菌（還元澱粉糖化物、乳酸菌）、コエンザイムＱ10／グリシン、ビタミンＣ、クエン酸、酸化マグネシウム、甘味料（羅漢果抽出物）、ヘム鉄、香料、ナイアシン、トリプトファン、テアニン、ヒアルロン酸、グルコン酸亜鉛、ビタミンＥ、パントテン酸カルシウム、ビタミンB1、ビタミンB6、ビタミンB2、ビタミンＡ、葉酸、ビタミンD3、ビタミンB12<br>
+            ※原材料に遺伝子組み換え原料は使用しておりません。</p>
+        </li>
+        <li>
+          <h6>■栄養成分</h6>
+          <p>栄養機能食品 (葉酸・ビタミンB1・ビタミンB6・ビタミンC・ビタミンE)<br>
+            ※葉酸は、赤血球の形成を助ける栄養素です。 葉酸は、胎児の正常な発育に寄与する栄養素です。<br>
+            ※ビタミンB1は、炭水化物からのエネルギー産生と皮膚や粘膜の健康維持を助ける栄養素です。<br>
+            ※ビタミンB6は、たんぱく質からのエネルギーの産生と皮膚や粘膜の健康維持を助ける栄養素です。<br>
+            ※ビタミンEは、抗酸化作用により、体内の脂質を酸化から守り、細胞の健康維持を助ける栄養素です。<br>
+            ※ビタミンCは、皮膚や粘膜の健康維持を助けるとともに、抗酸化作用を持つ栄養素です。<br>
+            1食(15gあたり) 1日女性平均摂取カロリー目安 全国平均1800〜2200kcalに対し
+            ●熱量:55.95kcal ●たんぱく質:11.07g ●脂質:0.54g ●炭水化物:1.69g[糖質:1.45g(糖類:0.27g)、食物繊維:0.24g] ●食塩相当量:0.29g<br>
+            ()の数値は栄養素等表示基準値に対する充足率です。<br>
+            ●ビタミンB1:1.845mg(153%) ●ビタミンB6:1.785mg(137%) ●ビタミンC:325.5mg(325%) ●ビタミンE:8.925mg(141%) ●葉酸:200μg(83%) ●鉄:2mg
+            ●亜鉛:8.8mg<br>
+            ●ピュアプロテイン100　1食(15gあたり)<br>
+            熱量:55.7kcal　たんぱく質:12.7g　脂質:0.31g　炭水化物:0.5g[糖質:0.2g(糖質:0.13g)、食物繊維:0.3g]、食塩相当量:0.14g<br>
+            ●やさいプロテイン100　1食(15gあたり)<br>
+            熱量：56.55kcal　たんぱく質：13.1g　脂質:0.45g　炭水化物:0.24g[糖質:0g(糖類:0g)、食物繊維:0.24g]、食塩相当量:0.51g<br>
+            ●休息プロテイン（ミックスフルーツ味）　1食(15gあたり)<br>
+            エネルギー：55.35kcal タンパク質：11.45g 脂質：0.39g　炭水化物:1.7g ［糖質：1.35g（糖類：0.44g）、食物繊維：0.35g）] 食塩相当量：0.19g</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <seciton class="featured">
+    <h2><img src="./img/Icon-metro-info.svg" alt=""><span>特集</span></h2>
+    <div class="featured__inner">
+      <ul class="featured__banners">
+        <li><a href="#">
+          <img class="featured__banners-pc" src="./img/feature1.jpg" alt="">
+          <img class="featured__banners-sp" src="./img/feature-sp1.jpg" alt="">
+        </a></li>
+        <li><a href="#">
+          <img class="featured__banners-pc" src="./img/feature2.jpg" alt="">
+          <img class="featured__banners-sp" src="./img/feature-sp2.jpg" alt="">
+        </a></li>
+        <li><a href="#">
+          <img class="featured__banners-pc" src="./img/feature3.jpg" alt="">
+          <img class="featured__banners-sp" src="./img/feature-sp3.jpg" alt="">
+        </a></li>
+      </ul>
+    </div>
+  </seciton>
+
+  <section class="guide-cta">
+    <div class="guide-cta__inner">
+      <div class="guide-cta__upper">
+        <h2>ご不明点・ご質問はこちら</h2>
+        <ul>
+          <li><a href="#"><span>ご利用ガイド</span><img src="./img/Icon-ionic-ios-arrow-dropleft-circle-green.svg" alt=""></a></li>
+          <li><a href="#"><span>よくある質問</span><img src="./img/Icon-ionic-ios-arrow-dropleft-circle-green.svg" alt=""></a></li>
+          <li><a href="#"><span>お問い合わせ</span><img src="./img/Icon-ionic-ios-arrow-dropleft-circle-green.svg" alt=""></a></li>
+        </ul>
+      </div>
+      <div class="guide-cta__under">
+        <div>
+          <h2>配送料について</h2>
+          <div class="guide-cta__under-item guide-cta__under-item--banner">
+            <a href="#">
+              <img src="./img/shipping-fee-banner.jpg" alt="2,000円以上送料無料‼1回のご注文の合計金額が7,000円(税込7,560円)未満の場合、商品点数やお届け先数にかかわらず、送料を頂戴いたします。">
+
+            </a>
+          </div>
+        </div>
+        <div>
+          <h2>お電話でのご質問</h2>
+          <div class="guide-cta__under-item">
+            <a href="#">
+              <h3>03-XXXX-XXXX</h3>
+              <p>平日：9：00〜17：00</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <h2 class="footer__title">
+      <img src="./img/Icon-awesome-paper-plane.svg" alt="">
+      関連サイト
+    </h2>
+    <div class="footer-upper">
+      <div class="footer-upper__inner">
+        <ul class="footer__navi">
+          <li>
+            <div class="footer__navi-item">
+              <a href="#">商品を探す</a>
+              <ul>
+                <li><a href="#">北海道・東北</a></li>
+                <li><a href="#">関東（東京）</a></li>
+                <li><a href="#">関東（東京以外）</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="footer__navi-item">
+              <a href="#">人気ランキング</a>
+              <ul>
+                <li><a href="#">介護お役立ち記事</a></li>
+                <li><a href="#">自立支援ケア</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="footer__navi-item">
+              <a href="#">シニア投稿サービス</a>
+              <ul>
+                <li><a href="#">認知症について学ぶ</a></li>
+                <li><a href="#">認知症の種類を学ぶ</a></li>
+                <li><a href="#">認知機能を測定する</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="footer__navi-item">
+              <a href="#">会員特典</a>
+            </div>
+          </li>
+          <li>
+            <div class="footer__navi-item">
+              <a href="#">ご利用ガイド</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="footer__banners">
+          <li><a href="#"><img src="./img/footer-banner1.jpg" alt="認知症を超える。MCS Medical Care Service"></a></li>
+          <li><a href="#"><img src="./img/footer-banner2.jpg" alt="ずっと自由でいてください だって自分の家だから 認知症・介護のことなら愛の家グループホーム"></a></li>
+          <li><a href="#"><img src="./img/footer-banner3.jpg" alt="バナー：学研モール"></a></li>
+          <li><a href="#"><img src="./img/footer-banner4.jpg" alt="バナー：フィットネス新規HP"></a></li>
+        </ul>
+        <div class="important-notice important-notice--sp-under">
+          <h2><img src="./img/Icon-awesome-exclamation-circle.svg" alt="">運営会社からのお知らせ</h2>
+          <ul>
+            <li>あなたの認知機能を測定するアプリ【CADi3】がリリースされました。</a></li>
+            <li>ホームページがリニューアルしました。</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-middle">
+      <div class="footer-middle__inner">
+        <ul class="footer-middle__button">
+          <li><a href="#"><img src="./img/Icon-ionic-ios-arrow-dropright-circle.svg" alt="">健達ねっとについて</a></li>
+          <li><a href="#"><img src="./img/Icon-ionic-ios-arrow-dropright-circle.svg" alt="">会社概要</a></li>
+          <li><a href="#"><img src="./img/Icon-ionic-ios-arrow-dropright-circle.svg" alt="">お問い合わせ</a></li>
+          <li></li>
+        </ul>
+        <ul class="footer-middle__arrow">
+          <li><a href="#">信頼できる医療情報発信に向けての取り組み</a></li>
+        </ul>
+        <ul class="footer-middle__arrow">
+          <li><a href="#">プライバシーポリシー</a></li>
+          <li><a href="#">利用規約</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom__navi">
+        <div class="footer-bottom__navi__inner">
+          <h4><a href="#">健達ねっと</a></h4>
+          <ul>
+            <li><a href="#">コラムを読む</a></li>
+            <li><a href="#">介護施設を探す</a></li>
+            <li><a href="#">医療施設を探す</a></li>
+            <li><a href="#" class="orange">買いものをする</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom__copy">
+        © Copyright 2021 健達ねっと.
+      </div>
+      <div class="footer-bottom__by">
+        このホームページは、東証1部上場 学研ホールディングス（株）[証券コード：9470] グループのメディカル・ケア・サービス（株）が運営しています。
+      </div>
+    </div>
+  </footer>
+  <nav class="sp-menu">
+    <div class="sp-menu__inner">
+      <ul>
+        <li><a href="#"><img src="./img/sp-footer-home.svg" alt=""><span>ホーム</span></a></li>
+        <li><a href="#"><img src="./img/sp-footer-fav.svg" alt=""><span>お気に入り</span></a></li>
+        <li><a href="#"><img src="./img/sp-footer-search.svg" alt=""><span>検索</span></a></li>
+        <li><a href="#"><img src="./img/sp-footer-user.svg" alt=""><span>会員ページ</span></a></li>
+        <li><a href="#" class="js-sp-menu-button"><img src="./img/sp-footer-menu.svg" alt=""><span>メニュー</span></a></li>
+      </ul>
+    </div>
+    <div class="sp-menu__window js-sp-menu-window">
+      <h3><img src="./img/Icon-ionic-ios-flag.svg"><span>ページ</span></h3>
+      <ul>
+        <li><a href="#"><img src="./img/Icon-ionic-ios-arrow-dropright-circle.svg">商品を探す</a></li>
+        <li><a href="#"><img src="./img/Icon-ionic-ios-arrow-dropright-circle.svg">人気ランキング</a></li>
+        <li><a href="#"><img src="./img/Icon-ionic-ios-arrow-dropright-circle.svg">シニア投稿サービス</a></li>
+        <li><a href="#"><img src="./img/Icon-ionic-ios-arrow-dropright-circle.svg">会員特典</a></li>
+        <li><a href="#"><img src="./img/Icon-ionic-ios-arrow-dropright-circle.svg">ご利用ガイド</a></li>
+      </ul>
+      <h3><img src="./img/Icon-ionic-ios-flag.svg"><span>関連サイト</span></h3>
+      <ul>
+        <li><a href="#"><img src="./img/Icon-ionic-ios-arrow-dropright-circle.svg">健達コラムサイト</a></li>
+        <li><a href="#"><img src="./img/Icon-ionic-ios-arrow-dropright-circle.svg">介護施設情報サイト</a></li>
+        <li><a href="#"><img src="./img/Icon-ionic-ios-arrow-dropright-circle.svg">医療・地域包括センター情報サイト</a></li>
+        <li><a href="#"><img src="./img/Icon-ionic-ios-arrow-dropright-circle.svg">MCSサイト</a></li>
+        <li><a href="#"><img src="./img/Icon-ionic-ios-arrow-dropright-circle.svg">学研モールサイト</a></li>
+      </ul>
+      <div class="sp-menu__window-button">
+        <a href="#">お問い合わせ</a>
+        <a href="#">会員登録</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- <div style="height:100vh"></div> -->
+
+
+
+  <!-- <div style="height:100vh"></div> -->
+  <!-- Slick起動のためのモジュール読み込み -->
+  <script src="//code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <!-- Slickの起動:トップページメインカルーセル -->
+  <!-- <script src="./js/slick-top-main-carousel.js"></script> -->
+  <!-- Slickの起動:トップページサムネイルカルーセル -->
+  <!-- <script src="./js/slick-top-thumb-carousel.js"></script> -->
+  <!-- Slickの起動:トップページスマホ用カルーセル -->
+  <!-- <script src="./js/slick-top-sp.js"></script> -->
+  <!-- Slickの起動:トップページ商品一覧 -->
+  <!-- <script src="./js/slick-top-all-cards.js"></script> -->
+  <!-- SPメニューの開閉 -->
+  <script src="./js/js-sp-menu.js"></script>
+
+</body>
+
+</html>
