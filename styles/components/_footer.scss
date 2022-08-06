@@ -1,4 +1,22 @@
 .footer {
+  &__title{
+    // text-align: center;
+    color: white;
+    background-color: $orange;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    img{
+      margin-right: 5px;
+    }
+    @media (min-width:$break-point) {
+      display: none;
+    }
+  }
   &-upper {
     &__inner {
       max-width: $content-width;
@@ -50,6 +68,8 @@
     @media (max-width:$break-point) {
       flex-direction: column;
       flex-wrap: nowrap;
+      margin-bottom: 0;
+      margin-top: 0;
     }
 
     li {
@@ -134,6 +154,10 @@
             display: flex;
             align-items: center;
             padding: 10px 20px;
+            padding-right: 0;
+            img{
+              margin-right: 8px;
+            }
           }
         }
 

@@ -3,7 +3,6 @@
   padding: 20px;
   border: 2px dashed $orange;
   border-radius: 10px;
-
   @media (max-width:$break-point) {
     border: none;
     margin-left: 20px;
@@ -49,6 +48,13 @@
         padding-top: 10px;
         padding-bottom: 10px;
       }
+    }
+  }
+  &--sp-under {
+    border: 2px solid $orange;
+    margin-bottom: 10px;
+    @media (min-width:$break-point) {
+      display: none;
     }
   }
 }

@@ -1,12 +1,15 @@
 .all-cards {
   background-color: $orange-light;
   margin-bottom: 70px;
+  @media (max-width:$break-point) {
+    margin-bottom: 5px;
+  }
   &__inner {
     background-color: white;
     padding-top: 40px;
 
     @media (max-width:$break-point) {
-      padding-top: 30px;
+      padding-top: 20px;
     }
   }
 
