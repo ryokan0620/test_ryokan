@@ -3,4 +3,5 @@ $(".js-slick-sp").slick({
   autoplay: true,
   autoplaySpeed: 5000,
   arrows: false,
+  fade: true,
 });

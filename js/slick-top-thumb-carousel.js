@@ -9,6 +9,14 @@ $thumbnailSlider.slick({
   autoplay: true,
   autoplaySpeed: 5000,
   pauseOnFocus: false,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        autoplay: false,
+      },
+    },
+  ],
 });
 
 let tmpCenterThumbnail;
