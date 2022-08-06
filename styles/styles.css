@@ -1669,6 +1669,7 @@ a:hover {
 @media (max-width: 768px) {
   .guide-cta__under > div {
     width: 100%;
+    padding-right: 0;
   }
 }
 

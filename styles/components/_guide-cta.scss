@@ -136,6 +136,7 @@
       @media (max-width:$break-point) {
         // box-sizing: border-box;
         width: 100%;
+        padding-right: 0;
       }
       &:last-child {
         margin-right: 0;
