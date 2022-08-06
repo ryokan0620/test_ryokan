@@ -2046,7 +2046,7 @@ a:hover {
 @media (max-width: 1080px) {
   .footer-bottom__by {
     font-size: 12px;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
     text-align: left;
     line-height: 1.8;
   }
@@ -2195,6 +2195,51 @@ a:hover {
 
 .sp-menu__window-button a:last-child {
   margin-right: 0;
+}
+
+.product {
+  margin-top: 65px;
+}
+
+.product__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1080px;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product-slide {
+  width: 500px;
+}
+
+.product-slide__main {
+  margin: 0;
+}
+
+.product-slide__thumb {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product-slide__thumb img {
+  cursor: pointer;
+}
+
+.product-text {
+  width: 540px;
+}
+
+.product-text h2 {
+  color: #FF6400;
 }
 
 .article__inner {

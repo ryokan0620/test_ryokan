@@ -1,0 +1,29 @@
+.product{
+  margin-top: 65px;
+  &__inner{
+    display: flex;
+    max-width: $content-width;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  &-slide{
+    width: 500px;
+    &__main{
+      margin: 0;
+    }
+    &__thumb{
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      img{
+        cursor: pointer;
+      }
+    }
+  }
+  &-text{
+    width: 540px;
+    h2{
+      color: $orange;
+    }
+  }
+}
