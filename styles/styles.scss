@@ -7,6 +7,7 @@ body{
   font-weight: bold;
   box-sizing: border-box;
   color: $brown;
+  overflow-x: hidden;
 }
 
 // FOUT回避 https://mightyace.co.jp/2021/03/29/column2886/
