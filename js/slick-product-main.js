@@ -13,3 +13,8 @@ document.querySelectorAll('.js-product-thumb img').forEach((thumb,i) => {
   })
 })
 
+// 「次へ」ボタン
+document.querySelector(".product-slide__next")
+  .addEventListener("click", () => {
+    $jsProductMainSlider.slick("slickNext");
+  });

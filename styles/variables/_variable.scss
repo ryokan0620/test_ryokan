@@ -19,3 +19,4 @@ $break-point: 768px;
 $article-width: calc( #{$content-width} - 160px );
 $main-width: calc( #{$content-width} - #{$side-width} - 40px );
 $break-point-minus-1: calc( #{$break-point} - 1px );
+$product-width: calc( #{$content-width} / 2 );

@@ -31,6 +31,10 @@ a{
   }
 }
 
+em{
+  font-style:normal;
+}
+
 .shadow {
   box-shadow: 5px 5px 5px rgba(black, .16);
 }
@@ -41,6 +45,22 @@ a{
   &-double {
     border-radius: 20px;
   }
+}
+
+.sp-only{
+  @media (min-width: $break-point) {
+    display: none;
+  }
+}
+
+.pc-only{
+  @media(max-width: $break-point){
+    display: none;
+  }
+}
+
+@mixin font-sys{
+  font-family: "游ゴシック体",YuGothic,"游ゴシック","Yu Gothic","Helvetica Neue", "Helvetica","Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial","Meiryo", sans-serif;
 }
 
 @import './components/header'; // ヘッダ
