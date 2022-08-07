@@ -2564,6 +2564,7 @@ em {
   padding: 10px 0;
   line-height: 1.5;
   margin-bottom: 20px;
+  color: #5C3C20;
 }
 
 @media (max-width: calc( 1080px / 2)) {
