@@ -31,12 +31,14 @@
     }
 
     &-img-pc {
+      max-width: 498px;
       @media (max-width:$break-point-minus-1) {
         display: none;
       }
     }
 
     &-img-sp {
+      max-width: 335px;
       @media (min-width:$break-point) {
         display: none;
       }

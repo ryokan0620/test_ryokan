@@ -4,6 +4,8 @@ $(".js-slick-all-cards").slick({
   arrows: false,
   centerMode: true,
   swipeToSlide: true,
+  pauseOnFocus: false,
+  autoplay: true,
   responsive: [
     {
       breakpoint: 1500,

@@ -445,10 +445,18 @@ em {
   }
 }
 
+.header__logo-img-pc {
+  max-width: 498px;
+}
+
 @media (max-width: calc( 768px - 1px)) {
   .header__logo-img-pc {
     display: none;
   }
+}
+
+.header__logo-img-sp {
+  max-width: 335px;
 }
 
 @media (min-width: 768px) {
