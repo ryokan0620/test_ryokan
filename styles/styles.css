@@ -523,7 +523,7 @@ em {
   width: 324px;
   margin-left: auto;
   margin-right: 16px;
-  margin-top: 25px;
+  margin-top: 52px;
 }
 
 @media (max-width: 1080px) {
@@ -1532,7 +1532,7 @@ em {
 @media (max-width: 768px) {
   .guide-cta__inner {
     padding-top: 0;
-    padding-bottom: 15px;
+    padding-bottom: 0;
   }
 }
 
@@ -1644,11 +1644,9 @@ em {
 }
 
 .guide-cta ul li a img {
-  position: absolute;
-  right: 30px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
 }
 
 @media (max-width: 1080px) {
@@ -1700,6 +1698,12 @@ em {
 .guide-cta__under > div:last-child {
   margin-right: 0;
   padding-right: 0;
+}
+
+@media (max-width: 768px) {
+  .guide-cta__under-item {
+    margin-bottom: 15px;
+  }
 }
 
 .guide-cta__under-item a {
@@ -1814,7 +1818,7 @@ em {
 }
 
 .footer__navi > li {
-  margin-right: 50px;
+  margin-right: 80px;
 }
 
 .footer__navi-item {

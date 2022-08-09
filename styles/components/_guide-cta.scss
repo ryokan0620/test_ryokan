@@ -21,7 +21,7 @@
     }
     @media (max-width:$break-point) {
       padding-top: 0;
-      padding-bottom: 15px;
+      padding-bottom: 0;
     }
     position: relative;
   }
@@ -102,10 +102,13 @@
           }
         }
         img {
-          position: absolute;
-          right: 30px;
-          top: 50%;
-          transform: translateY(-50%);
+          // position: absolute;
+          // right: 30px;
+          // top: 50%;
+          // transform: translateY(-50%);
+          width: 20px;
+          height: 20px;
+          margin-left: 5px;
           @media (max-width:$content-width) {
             width: 20px;
             height: 20px;
@@ -145,6 +148,9 @@
     }
 
     &-item {
+      @media (max-width:$break-point) {
+        margin-bottom: 15px;
+      }
       a {
         background-color: white;
         display: block;
