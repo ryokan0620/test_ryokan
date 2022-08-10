@@ -746,10 +746,20 @@ em {
   }
 }
 
+.global-navi__inner > ul > li > a.is-opened {
+  background-color: #FF6400;
+  color: white;
+  opacity: 1;
+}
+
+.global-navi__inner > ul > li > a.is-opened img {
+  visibility: visible;
+}
+
 @media (max-width: 768px) {
-  .global-navi__inner > ul > li > a.active {
-    background-color: #FF6400 !important;
-    color: white !important;
+  .global-navi__inner > ul > li > a.is-opened {
+    background-color: #FFF8EA;
+    color: #FF6400;
   }
 }
 

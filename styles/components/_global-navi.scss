@@ -89,7 +89,6 @@
           img{
             visibility: hidden;
           }
-          // background-color: $orange-light;
           span {
             line-height: 1;
             margin-bottom: 18px;
@@ -107,12 +106,26 @@
               color: $orange;
             }
           }
-          &.active{
-            @media (max-width:$break-point) {
-              background-color: $orange !important;
-              color: white !important;
-            }
+          &.is-opened{
+            background-color: $orange;
+              color: white;
+              opacity: 1;
+            
+              img {
+                visibility: visible;
+              }
+            
+              @media (max-width:$break-point) {
+                background-color: $orange-light;
+                color: $orange;
+              }
           }
+          // &.active{
+          //   @media (max-width:$break-point) {
+          //     background-color: $orange !important;
+          //     color: white !important;
+          //   }
+          // }
         }
         &.active {
           @media (max-width:$break-point) {

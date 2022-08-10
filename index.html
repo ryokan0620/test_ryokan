@@ -900,6 +900,20 @@
         document.getElementById(naviButton.dataset.children).classList.remove('is-opened');
       })
     })   
+
+    document.querySelectorAll('.global-navi__hover').forEach((hoverContent) => {
+        hoverContent.addEventListener('mouseenter', (e) => {
+          e.target.classList.add('is-opened');
+          let query = '[data-children="' + e.target.getAttribute('id') + '"]';
+          console.log(query);
+          document.querySelector(query).classList.add('is-opened');
+        })
+        hoverContent.addEventListener('mouseleave', (e) => {
+          e.target.classList.remove('is-opened');
+          let query = '[data-children="' + e.target.getAttribute('id') + '"]';
+          document.querySelector(query).classList.remove('is-opened');
+        })
+      })
   </script>
 </body>
 
