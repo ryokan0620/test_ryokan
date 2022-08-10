@@ -66,17 +66,8 @@ em{
 @import './components/header'; // ヘッダ
 @import './components/search-box'; // ヘッダ「キーワード検索」コンポーネント
 
-.global-navi{
-  &__inner{
-    max-width: $content-width;
-    margin: 0 auto;
-  }
-  ul{
-    margin-top: 0;
-    margin-bottom: 0;
-    display: flex;
-  }
-}
+@import './components/global-navi';
+
 
 
 

@@ -1,0 +1,144 @@
+.global-navi {
+  position: relative;
+  margin-bottom: 10px;
+  @media (max-width:$break-point) {
+    border-bottom: 10px solid $orange;
+    // width: 100%;
+      // overflow-x: scroll;
+  }
+  &__inner {
+    max-width: $content-width;
+    margin: 0 auto;
+    @media (max-width:$break-point) {
+      // margin: 0;
+      overflow-x: scroll;
+    }
+    >ul {
+      margin-top: 0;
+      margin-bottom: 0;
+      display: flex;
+      justify-content: space-evenly;
+      @media (max-width:$break-point) {
+        justify-content: flex-start;
+      }
+      >li{
+        flex-grow: 1;
+        height: 95px;
+        font-size: 22px;
+        width: 100%;
+        position: relative;
+        border-right: 2px solid $orange;
+        min-width: 140px;
+        @media (max-width:$content-width) {
+          font-size: 16px;
+        }
+        @media (max-width:$break-point) {
+          height: 80px;
+          &:after {
+            content: "";
+            width: 2px;
+            position: absolute;
+            height: 11px;
+            top:0;
+            right:-2px;
+            background-color: white;
+          }
+        }
+        &:first-child{
+          border-left: 2px solid $orange;
+          min-width: 100px;
+          >a{
+            img{
+              visibility: visible;
+            }
+            &:hover {
+              background-color: white;
+              color: $orange;
+            }
+          }
+          @media (max-width:$break-point) {
+            &:before {
+              content: "";
+              width: 2px;
+              position: absolute;
+              height: 11px;
+              top: 0;
+              left: -2px;
+              background-color: white;
+            }
+          }
+        }
+        >a{
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: end;
+          border-top-right-radius: 10px;
+          border-top-left-radius: 10px;
+          margin-left: 5px;
+          margin-right: 5px;
+          @media (max-width:$break-point) {
+            background-color: $orange-light;
+            margin-left: 0;
+            margin-right: 0;
+            img{
+              visibility: hidden !important;
+            }
+          }
+          img{
+            visibility: hidden;
+          }
+          // background-color: $orange-light;
+          span {
+            line-height: 1;
+            margin-bottom: 18px;
+            margin-top: 5px;
+          }
+          &:hover{
+            background-color: $orange;
+            color: white;
+            opacity: 1;
+            img{
+              visibility: visible;
+            }
+          }
+          &.active{
+            @media (max-width:$break-point) {
+              background-color: $orange;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__hover{
+    display: none;
+    position: absolute;
+    background-color: $orange-light;
+    z-index: 10;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom:0;
+    border-top: 10px solid $orange;
+    transform: translateY(100%);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    &-inner{
+      max-width: $content-width;
+      margin: 0 auto;
+    }
+    &.is-opened{
+      display: block;
+      @media (max-width:$content-width) {
+        display: none;
+      }
+    }
+    ul{
+      max-width: $content-width;
+      margin: 0 auto;
+    }
+  }
+}
