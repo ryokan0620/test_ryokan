@@ -105,8 +105,8 @@
           }
           &.active{
             @media (max-width:$break-point) {
-              background-color: $orange;
-              color: white;
+              background-color: $orange !important;
+              color: white !important;
             }
           }
         }

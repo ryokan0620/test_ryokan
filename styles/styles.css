@@ -740,8 +740,8 @@ em {
 
 @media (max-width: 768px) {
   .global-navi__inner > ul > li > a.active {
-    background-color: #FF6400;
-    color: white;
+    background-color: #FF6400 !important;
+    color: white !important;
   }
 }
 
