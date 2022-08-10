@@ -56,7 +56,7 @@
       </div>
     </div>
   </header>
-  <nav class="global-navi" style="">
+  <nav class="global-navi">
     <div class="global-navi__inner">
       <ul>
         <li class="active">
@@ -891,9 +891,7 @@
   <script src="./js/js-sp-menu.js"></script>
 
   <script>
-    const naviButtons = document.querySelectorAll('.js-global-navi');
-    // console.log(naviButtons);
-    naviButtons.forEach((naviButton) =>{
+    document.querySelectorAll('.js-global-navi').forEach((naviButton) =>{
       naviButton.addEventListener('mouseenter', ()=>{
         document.getElementById(naviButton.dataset.children).classList.add('is-opened');
       })

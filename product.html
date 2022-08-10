@@ -57,6 +57,66 @@
     </div>
   </header>
 
+  <nav class="global-navi">
+    <div class="global-navi__inner">
+      <ul>
+        <li class="active">
+          <a href="#">
+            <img src="./img/global-navi-home.svg" alt=""><span>ホーム</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="js-global-navi" data-children="js-hover-ranking">
+            <img src="./img/global-navi-ranking.svg" alt=""><span>人気ランキング</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="js-global-navi" data-children="js-hover-senior">
+            <img src="./img/global-navi-feature.svg" alt=""><span>シニア投稿</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="js-global-navi" data-children="js-hover-benefit">
+            <img src="./img/global-navi-benefit.svg" alt=""><span>会員特典</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="js-global-navi" data-children="js-hover-guide">
+            <img src="./img/global-navi-benefit.svg" alt="" /><span>ご利用ガイド</span>
+  
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="global-navi__hover" id="js-hover-ranking">
+      <div class="global-navi__hover-inner">
+        <h3>ここに、ナビ「人気ランキング」がホバーされた際のコンテンツが入ります。</h3>
+      </div>
+    </div>
+    <div class="global-navi__hover" id="js-hover-senior">
+      <div class="global-navi__hover-inner">
+        <h3>ここに、ナビ「シニア投稿」がホバーされた際のコンテンツが入ります。</h3>
+      </div>
+    </div>
+    <div class="global-navi__hover" id="js-hover-benefit">
+      <div class="global-navi__hover-inner">
+        <h3>ここに、ナビ「会員特典」がホバーされた際のコンテンツが入ります。</h3>
+      </div>
+    </div>
+    <div class="global-navi__hover" id="js-hover-guide">
+      <div class="global-navi__hover-inner">
+        <h3>ここに、ナビ「ご利用ガイド」がホバーされた際のコンテンツが入ります。</h3>
+      </div>
+      <!-- <ul>
+          <li><a href="#">注文方法</a></li>
+          <li><a href="#">返品・キャンセル</a></li>
+          <li><a href="#">配送について</a></li>
+          <li><a href="#">お支払い方法</a></li>
+          <li><a href="#">当サイトについて</a></li>
+        </ul> -->
+    </div>
+  </nav>
+
   <main class="product">
     <div class="product__inner">
       <div class="product-slide">
@@ -492,6 +552,18 @@
   <!-- <script src="./js/slick-top-all-cards.js"></script> -->
   <!-- SPメニューの開閉 -->
   <script src="./js/js-sp-menu.js"></script>
+
+  <script>
+    document.querySelectorAll('.js-global-navi').forEach((naviButton) => {
+      naviButton.addEventListener('mouseenter', () => {
+        document.getElementById(naviButton.dataset.children).classList.add('is-opened');
+      })
+
+      naviButton.addEventListener('mouseleave', () => {
+        document.getElementById(naviButton.dataset.children).classList.remove('is-opened');
+      })
+    })   
+  </script>
 
 </body>
 
