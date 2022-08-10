@@ -739,7 +739,24 @@ em {
 }
 
 @media (max-width: 768px) {
+  .global-navi__inner > ul > li > a:hover {
+    background-color: #FFF8EA;
+    color: #FF6400;
+  }
+}
+
+@media (max-width: 768px) {
   .global-navi__inner > ul > li > a.active {
+    background-color: #FF6400 !important;
+    color: white !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .global-navi__inner > ul > li.active {
+    border: none !important;
+  }
+  .global-navi__inner > ul > li.active > a {
     background-color: #FF6400 !important;
     color: white !important;
   }

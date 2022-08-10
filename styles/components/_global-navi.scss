@@ -102,10 +102,23 @@
             img{
               visibility: visible;
             }
+            @media (max-width:$break-point) {
+              background-color: $orange-light;
+              color: $orange;
+            }
           }
           &.active{
             @media (max-width:$break-point) {
               background-color: $orange !important;
+              color: white !important;
+            }
+          }
+        }
+        &.active {
+          @media (max-width:$break-point) {
+            border: none !important;
+            >a{
+              background-color: $orange  !important;
               color: white !important;
             }
           }
