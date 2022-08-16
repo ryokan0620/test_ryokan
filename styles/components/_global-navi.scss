@@ -3,14 +3,11 @@
   margin-bottom: 10px;
   @media (max-width:$break-point) {
     border-bottom: 10px solid $orange;
-    // width: 100%;
-      // overflow-x: scroll;
   }
   &__inner {
     max-width: $content-width;
     margin: 0 auto;
     @media (max-width:$break-point) {
-      // margin: 0;
       overflow-x: scroll;
     }
     >ul {
@@ -87,7 +84,7 @@
             }
           }
           img{
-            visibility: hidden;
+            // visibility: hidden;
           }
           span {
             line-height: 1;
@@ -95,11 +92,11 @@
             margin-top: 5px;
           }
           &:hover{
-            background-color: $orange;
-            color: white;
+            background-color: $yellow;
+            // color: white;
             opacity: 1;
             img{
-              visibility: visible;
+              // visibility: visible;
             }
             @media (max-width:$break-point) {
               background-color: $orange-light;
@@ -107,12 +104,12 @@
             }
           }
           &.is-opened{
-            background-color: $orange;
-              color: white;
+            background-color: $yellow;
+              // color: white;
               opacity: 1;
             
               img {
-                visibility: visible;
+                // visibility: visible;
               }
             
               @media (max-width:$break-point) {
@@ -120,12 +117,6 @@
                 color: $orange;
               }
           }
-          // &.active{
-          //   @media (max-width:$break-point) {
-          //     background-color: $orange !important;
-          //     color: white !important;
-          //   }
-          // }
         }
         &.active {
           @media (max-width:$break-point) {
@@ -148,9 +139,9 @@
     left: 0;
     right: 0;
     bottom:0;
-    border-top: 10px solid $orange;
+    border-top: 10px solid $yellow;
     transform: translateY(100%);
-    padding-top: 40px;
+    padding-top: 35px;
     padding-bottom: 40px;
     &-inner{
       max-width: $content-width;
@@ -165,6 +156,107 @@
     ul{
       max-width: $content-width;
       margin: 0 auto;
+    }
+    &--guide{
+      font-size: 22px;
+      // display: block;
+      padding-top: 55px;
+      padding-bottom: 40px;
+      ul{
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 8%;
+        li{
+          margin-left: 60px;
+          margin-right: 60px;
+          margin-bottom: 20px;
+          &:first-child{
+            padding-left: 2em;
+          }
+          a{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            line-height: 1;
+          }
+        }
+      }
+      img{
+        width: 22px;
+        margin-left: 8px;
+      }
+    }
+    &--benefit{
+      ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li{
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+      }
+      &-text{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: 22px;
+        margin-top: 20px;
+        line-height: 1;
+        img{
+          width: 22px;
+          margin-left: 8px;
+        }
+      }
+    }
+    &--ranking{
+      padding-top: 85px;
+      ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        li{
+          position: relative;
+        }
+      }
+      &-medal{
+        position: absolute;
+        left: 50%;
+        top:-50px;
+        transform: translateX(-50%);
+        z-index: 2;
+      }
+      &-thumb{
+        border-top-left-radius: 20px;
+      }
+      &-text{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: 22px;
+        margin-top: 20px;
+        line-height: 1;
+        img {
+          width: 22px;
+          margin-left: 8px;
+        }
+      }
+      &-button{
+        display: block;
+        // margin: 0 auto;
+        margin-top: 40px;
+        color: white;
+        background-color: $orange;
+        font-size: 18px;
+        // text-align: center;
+        padding: 10px 30px;
+        border-radius: 30px;
+        box-shadow: 5px 5px 5px rgba(black,.16);
+        &-area{
+          display: flex;
+          justify-content: center;
+        }
+      }
     }
   }
 }
