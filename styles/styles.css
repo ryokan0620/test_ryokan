@@ -637,7 +637,7 @@ em {
   width: 100%;
   position: relative;
   border-right: 2px solid #FF6400;
-  min-width: 140px;
+  min-width: 145px;
 }
 
 @media (max-width: 1080px) {
