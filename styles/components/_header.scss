@@ -27,9 +27,9 @@
   }
 
   &__logo {
-    @media (max-width:$break-point) {
-      margin: 0 auto;
-    }
+    // @media (max-width:$break-point) {
+    //   margin: 0 auto;
+    // }
 
     &-img-pc {
       max-width: 498px;

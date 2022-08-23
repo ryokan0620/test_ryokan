@@ -25,7 +25,7 @@
         width: 100%;
         position: relative;
         border-right: 2px solid $orange;
-        min-width: 145px;
+        min-width: 140px;
         @media (max-width:$content-width) {
           font-size: 16px;
         }
@@ -42,12 +42,8 @@
           }
         }
         &:first-child{
-          border-left: 2px solid $orange;
           min-width: 100px;
           >a{
-            img{
-              visibility: visible;
-            }
             &:hover {
               background-color: white;
               color: $orange;
@@ -65,6 +61,9 @@
             }
           }
         }
+        &:nth-child(3){
+          min-width: 150px;
+        }
         >a{
           height: 100%;
           display: flex;
@@ -80,24 +79,22 @@
             margin-left: 0;
             margin-right: 0;
             img{
-              visibility: hidden !important;
+              width: 50px;
+              height: 50px;
             }
-          }
-          img{
-            // visibility: hidden;
           }
           span {
             line-height: 1;
             margin-bottom: 18px;
             margin-top: 5px;
+            @media (max-width:$break-point) {
+              margin-bottom: 10px;
+              margin-top: 4px;
+            }
           }
           &:hover{
             background-color: $yellow;
-            // color: white;
             opacity: 1;
-            img{
-              // visibility: visible;
-            }
             @media (max-width:$break-point) {
               background-color: $orange-light;
               color: $orange;
@@ -105,25 +102,17 @@
           }
           &.is-opened{
             background-color: $yellow;
-              // color: white;
-              opacity: 1;
-            
-              img {
-                // visibility: visible;
-              }
-            
-              @media (max-width:$break-point) {
-                background-color: $orange-light;
-                color: $orange;
-              }
+            opacity: 1;
+            @media (max-width:$break-point) {
+              background-color: $orange-light;
+              color: $orange;
+            }
           }
         }
         &.active {
           @media (max-width:$break-point) {
-            border: none !important;
             >a{
-              background-color: $orange  !important;
-              color: white !important;
+              background-color: $yellow  !important;
             }
           }
         }
@@ -159,7 +148,6 @@
     }
     &--guide{
       font-size: 22px;
-      // display: block;
       padding-top: 55px;
       padding-bottom: 40px;
       ul{
@@ -243,12 +231,10 @@
       }
       &-button{
         display: block;
-        // margin: 0 auto;
         margin-top: 40px;
         color: white;
         background-color: $orange;
         font-size: 18px;
-        // text-align: center;
         padding: 10px 30px;
         border-radius: 30px;
         box-shadow: 5px 5px 5px rgba(black,.16);

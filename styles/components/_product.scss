@@ -1,9 +1,11 @@
 .product{
-  margin-top: 65px;
-  margin-bottom: 40px;
-  @media(max-width:$product-width){
-    margin-top: 10px;
-    margin-bottom: 0;
+  &-product{
+    margin-top: 65px;
+    margin-bottom: 40px;
+    @media(max-width:$product-width){
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
   }
   &__inner{
     display: flex;

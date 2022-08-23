@@ -26,12 +26,6 @@
     position: relative;
   }
 
-  // &__upper{
-  //   @media (max-width:$break-point) {
-  //     // margin-top: -20px;
-  //   }
-  // }
-
   h2 {
     color: $green;
     font-size: 22px;
@@ -59,11 +53,7 @@
         display: none;
       }
     }
-    // &:first-child{
-    //   @media (max-width:$break-point) {
-    //     margin-top: -20px;
-    //   }
-    // }
+
   }
 
   ul {
@@ -95,17 +85,12 @@
           font-size: 14px;
           height: 120px;
           box-shadow: 3px 3px 3px rgba(black, .16);
-          // justify-content: space-around;
           span{
             display: block;
             margin-bottom: 15px;
           }
         }
         img {
-          // position: absolute;
-          // right: 30px;
-          // top: 50%;
-          // transform: translateY(-50%);
           width: 20px;
           height: 20px;
           margin-left: 5px;

@@ -440,12 +440,6 @@ em {
   }
 }
 
-@media (max-width: 768px) {
-  .header__logo {
-    margin: 0 auto;
-  }
-}
-
 .header__logo-img-pc {
   max-width: 498px;
 }
@@ -637,7 +631,7 @@ em {
   width: 100%;
   position: relative;
   border-right: 2px solid #FF6400;
-  min-width: 145px;
+  min-width: 140px;
 }
 
 @media (max-width: 1080px) {
@@ -662,12 +656,7 @@ em {
 }
 
 .global-navi__inner > ul > li:first-child {
-  border-left: 2px solid #FF6400;
   min-width: 100px;
-}
-
-.global-navi__inner > ul > li:first-child > a img {
-  visibility: visible;
 }
 
 .global-navi__inner > ul > li:first-child > a:hover {
@@ -685,6 +674,10 @@ em {
     left: -2px;
     background-color: white;
   }
+}
+
+.global-navi__inner > ul > li:nth-child(3) {
+  min-width: 150px;
 }
 
 .global-navi__inner > ul > li > a {
@@ -715,7 +708,8 @@ em {
     margin-right: 0;
   }
   .global-navi__inner > ul > li > a img {
-    visibility: hidden !important;
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -725,8 +719,15 @@ em {
   margin-top: 5px;
 }
 
+@media (max-width: 768px) {
+  .global-navi__inner > ul > li > a span {
+    margin-bottom: 10px;
+    margin-top: 4px;
+  }
+}
+
 .global-navi__inner > ul > li > a:hover {
-  background-color: #FFDF72;
+  background-color: #FFE200;
   opacity: 1;
 }
 
@@ -738,7 +739,7 @@ em {
 }
 
 .global-navi__inner > ul > li > a.is-opened {
-  background-color: #FFDF72;
+  background-color: #FFE200;
   opacity: 1;
 }
 
@@ -750,12 +751,8 @@ em {
 }
 
 @media (max-width: 768px) {
-  .global-navi__inner > ul > li.active {
-    border: none !important;
-  }
   .global-navi__inner > ul > li.active > a {
-    background-color: #FF6400 !important;
-    color: white !important;
+    background-color: #FFE200 !important;
   }
 }
 
@@ -768,7 +765,7 @@ em {
   left: 0;
   right: 0;
   bottom: 0;
-  border-top: 10px solid #FFDF72;
+  border-top: 10px solid #FFE200;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   padding-top: 35px;
@@ -2576,13 +2573,13 @@ em {
   margin-right: 0;
 }
 
-.product {
+.product-product {
   margin-top: 65px;
   margin-bottom: 40px;
 }
 
 @media (max-width: calc( 1080px / 2)) {
-  .product {
+  .product-product {
     margin-top: 10px;
     margin-bottom: 0;
   }
