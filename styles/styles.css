@@ -657,6 +657,7 @@ em {
 
 .global-navi__inner > ul > li:first-child {
   min-width: 100px;
+  border-left: 2px solid #FF6400;
 }
 
 .global-navi__inner > ul > li:first-child > a:hover {
@@ -665,6 +666,9 @@ em {
 }
 
 @media (max-width: 768px) {
+  .global-navi__inner > ul > li:first-child {
+    border-left: none;
+  }
   .global-navi__inner > ul > li:first-child:before {
     content: "";
     width: 2px;

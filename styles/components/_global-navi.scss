@@ -43,6 +43,7 @@
         }
         &:first-child{
           min-width: 100px;
+          border-left: 2px solid $orange;
           >a{
             &:hover {
               background-color: white;
@@ -50,6 +51,7 @@
             }
           }
           @media (max-width:$break-point) {
+            border-left: none;
             &:before {
               content: "";
               width: 2px;
