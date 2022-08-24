@@ -127,11 +127,12 @@
     background-color: $orange-light;
     z-index: 10;
     width: 100%;
+    top:95px;
     left: 0;
     right: 0;
-    bottom:0;
+    // bottom:0;
     border-top: 10px solid $yellow;
-    transform: translateY(100%);
+    // transform: translateY(100%);
     padding-top: 35px;
     padding-bottom: 40px;
     &-inner{
