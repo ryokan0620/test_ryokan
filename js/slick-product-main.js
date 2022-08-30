@@ -1,4 +1,6 @@
 $jsProductMainSlider = $(".js-product-main");
+
+// Slickの起動
 $jsProductMainSlider.slick({
   fade: true,
   arrows: false,
@@ -18,3 +20,5 @@ document.querySelector(".product-slide__next")
   .addEventListener("click", () => {
     $jsProductMainSlider.slick("slickNext");
   });
+
+

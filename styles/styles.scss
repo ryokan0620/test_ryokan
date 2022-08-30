@@ -1,4 +1,4 @@
-@import './vander/normalize';  // https: //necolas.github.io/normalize.css/
+@import './vender/normalize';  // https: //necolas.github.io/normalize.css/
 @import './variables/variable'; // 色や画面幅などの変数
 
 body{
@@ -84,8 +84,8 @@ em{
 @import './components/sp-menu'; // スマホ画面下メニュー
 @import './components/product'; // 商品ページメイン
 @import './components/article'; // 商品ページ説明記事
-@import './components/description-box'; // 商品ページ説明記事
-
+@import './components/description-box'; // 商品ページ商品詳細情報
+@import './components/review'; // 商品ページ商品詳細情報
 @import './components/trouble'; // 商品ページ「お悩み」
 
 
